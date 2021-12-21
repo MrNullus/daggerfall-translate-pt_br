@@ -1,0 +1,96 @@
+- This is for testing log action + journal ui
+
+Quest: __DEMO02
+
+QRC:
+
+QuestLogEntry: [1010]
+%qdt:
+ _qgiver_ da Irmandade das Trevas
+ em __qgiver_, ___qgiver_
+ tem-me a fazer uma visita em =assasin_,
+ um assassino concorrente, em que %g está a completar um contrato
+ em ___mondung_. Se eu conseguir encontrar algum
+ pistas sobre =assasin_'s empregador,
+ Devo também prestar contas a ele ou ela.
+ Seja como for, todo o maldito negócio precisa
+ a ser feito em =queston_ days.
+
+Mensagem:	1012
+%qdt:
+ O Grémio dos Combatentes de ___qgiver_
+ pediu-me para matar uma besta selvagem que
+ entrou em _house_. Tem
+ ser feito num só dia.
+
+Mensagem:	1013
+%qdt:
+ _qgiver_ em ___qgiver_ deu
+ o meu trabalho de matar um tigre ou um urso
+ que entraram na _house_
+ em __house_. Se eu voltar
+ para ele dentro de =2dung_ dias que eu recebo
+ _douradas_ peças de ouro.
+
+
+Mensagem:	1014
+Em %qdt,
+ Encontrei-me com _agent_ of ___agent_.
+ %g disse-me que um cliente misterioso de
+ %g3 estava à procura de daedric _ingredient_.
+ Se o conseguir encontrar, vou obter o _artifact_.
+ O _ingrediente_ do daedric está algures
+ em ___moradia_.  Quando o encontro, estou
+ para se encontrar com um _qgiver_ em
+ __meetingplace_ aqui em __meetingplace_.
+
+Mensagem:	1015
+%qdt:
+ Encontrei-me secretamente com _qgiver_ em
+ Quem me deu um
+ carta falsificada. Vou esgueirar-me para o
+ em __inn_ e
+ substituir a letra verdadeira. Tenho =tempo_de_viagem dias
+ para completar esta busca. Se eu for apanhado,
+ Estou por minha conta.
+
+Mensagem:	1016
+%qdt
+ O _doador_ de ___doador_ ofereceu-me _dourado_
+ ouro para encontrar %g3 livro, _book_.
+
+Mensagem:	1017
+%qdt:
+ _qgiver_ de
+ ==qgiver_ em ___qgiver_
+ diz que a Daedras está a verter
+ através de uma fenda dimensional.
+ Tenho de ir a ___morão_
+ e matá-los a todos. Eles irão
+ contacte-me por feitiço quando eu
+ mataram o último deles.
+ Eu tenho =2dung_ dias antes
+ é demasiado tarde.
+
+Mensagem:	1018
+%qdt:
+ _qgiver_ de __qgiver_,
+ em ___qgiver_, disse-me que %g3 deus era
+ enraivecidos. %g necessidades não manchadas
+ ingredient_from ___dungeon_
+ para um rito de expiação. É
+ deve estar em _qgiver_'s
+ mãos em __qgiver_
+ dentro de =traveltime_days.
+
+QBN:
+
+- Headless entry point with custom action
+log 1010 step 0
+log 1012 step 1
+log 1013 step 2
+log 1014 step 3
+log 1015 step 4
+log 1016 step 5
+log 1017 step 6
+log 1018 step 7

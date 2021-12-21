@@ -1,0 +1,313 @@
+-- Quest: C:\QUESTS\WORKING\A0C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0
+-- QuestId: 0
+-- Edited for Daggerfall Unity by Jay_H
+Mensagens: 32
+Busca: A0C00Y00
+DisplayName: O carteiro
+-- Painéis de mensagens
+QRC:
+
+QuestorOffer:  [1000]
+<ce> O meu nome é _qgiver_. Eu tenho uma missão
+<ce> que requer o máximo furto e sigilo. O risco
+<ce> é mínimo, e eu pagar-lhe-ei _peças de ouro_ douradas. É
+<ce> só levará =traveltime_ dias do seu tempo. Não posso
+<ce> dizer-lhe mais, a menos que aceite esta missão.
+                                     <--->
+<ce> Hullo lá, jovem %ra. Como gostaria de fazer
+<ce> _dourado_ peças de ouro só por executar o que me dizem
+<ce> é chamado nos círculos mercenários "o velho switcheroo"?
+
+RecuseQuest:  [1001]
+<ce> Eu compreendo. Estou contente por não ter revelado nenhum
+<ce> detalhes para si. Agora não pode trair-me.
+                                     <--->
+<ce> Muito bem, mas a falta de ambição pode muito bem ser a sua
+<ce> queda, meu jovem amigo.
+
+
+AcceptQuest:  [1002]
+<ce> Ir para _inn_ em __inn_.
+<ce> Alojado lá está um estafeta com uma carta. Leva
+<ce> it e deixar este falso no seu lugar. Não o faça
+<ce> perturbar qualquer um dos seus pertences. Se ele descobre
+<ce> que a carta tenha sido trocada, toda a minha
+<ce> os planos serão arruinados. Se for apanhado, não
+<ce> incomodar-se em tentar encontrar-me.
+
+QuestFail:  [1003]
+<ce> Não tem uma carta para 'entregar' para mim?
+                                     <--->
+<ce> Volte quando tiver completado a sua missão, %pcf.
+
+QuestComplete:  [1004]
+<ce> Ah! bem feito, %pcf. Aqui está a sua recompensa.
+<ce> Nunca mencione este caso a ninguém. Eu negarei
+<ce> ever meeting you.
+
+RumoresDuringQuest:  [1005]
+<ce> A colheita parece ser boa este ano.
+
+RumoresPós-falha:  [1006]
+<ce> _qgiver_ tem caído em tempos difíceis ultimamente.
+
+RumoresPostsuccess:  [1007]
+<ce> _qgiver_ tem tido ultimamente uma série de sorte.
+
+QuestorPostsuccess:  [1008]
+<ce> Shhh. Lembro-me certamente daquela pequena carta
+<ce> missão de troca que me encarregou, mas eu faria
+<ce> em vez de que mais ninguém soubesse disso.
+
+QuestorPostfailure:  [1009]
+<ce> És tu! Tudo o que te pedi foi que trocasses um
+<ce> carta simples, e nem isso conseguiria fazer!
+<ce> Deixa a minha presença.
+
+QuestLogEntry:  [1010]
+%qdt:
+ Encontrei-me secretamente com _qgiver_ em
+ Quem me deu um
+ carta falsificada. Vou esgueirar-me para o
+ em __inn_ e
+ substituir a letra verdadeira. Tenho =tempo_de_viagem dias
+ para completar esta busca. Se eu for apanhado,
+ Estou por minha conta.
+
+Mensagem:  1011
+_npc1_,
+    É um homem muito rancoroso. Como poderia eu alguma vez
+ pensaram que eu vos amava. Desde que me apanhaste
+ na varanda, nos braços de _npc2_,
+ Posso agora revelar que somos de facto amantes. %g é
+ capaz de me dar tudo o que não pode. Fez
+ sinto-me imundo com os vossos nojentos presentes de ouro.
+ Nunca mais escureça a minha porta.
+ 
+                       _npc3_
+
+Mensagem:  1012
+Meu querido _npc1_,
+    Sei que estás zangado e magoado. Eu faria
+ qualquer coisa para reconquistar o seu amor. O que viu no
+ varanda não era do meu desejo. Tinha demasiado para beber
+ naquela noite e _npc2_ aproveitou
+ o momento de roubar um beijo. %g foi flagelado e
+ já não se encontra ao meu serviço. Por favor, perdoem-me.
+ Só te amo a ti.
+ 
+                       _npc3_
+
+Mensagem:  1013
+<ce> Esta taverna é parecida com qualquer outra. No entanto, para si
+<ce> é um lugar onde a furtividade conta para mais de
+<ce> força. Agora para descobrir onde o estafeta tem
+<ce> deixou essa carta.
+
+Mensagem:  1014
+<ce> Ladrão! Eu ensino-te a roubar de um mensageiro honesto!
+
+Mensagem:  1015
+<ce> Como a letra cheia de mentiras deixa os seus dedos,
+<ce> sabe que a sua busca está meio feita.
+
+Mensagem:  1016
+Barão _npc1_,
+    A contagem _npc2_ terá %g3 forças
+ à espera de o emboscarem no passe. Não
+ cair na sua armadilha.
+                     _npc3_
+
+Mensagem:  1017
+_npc1_,
+    A sua oferta é ridícula!
+ Posso comprar pela metade desse preço
+ de qualquer outro comerciante em
+ ___npc1_, e eu irei.
+                  _npc2_
+
+Mensagem:  1018
+Honorável _npc1_,
+    Decidi lançar o meu
+ votar em si quando o grémio
+ cédulas para tesoureiro. De
+ curso, espero ser tratado
+ bem num futuro próximo.
+                   _npc2_
+
+Mensagem:  1019
+Barão _npc1_,
+    A contagem _npc2_ será
+ à sua espera no passe.
+ O acordo de tréguas %g3 é um
+ honrado e justo.
+                  _npc3_
+
+Mensagem:  1020
+_npc1_,
+    O seu preço é justo.
+ Esta carta é a minha ligação de
+ pagamento da mercadoria. Apresentar
+ ao meu factor quando você
+ entregá-los.
+                  _npc2_
+
+Mensagem:  1021
+Honorável _npc1_,
+    Decidi lançar o meu
+ vote em _npc3_ no
+ próxima reunião do grémio. %g tem
+ mostrado %g3 fidelidade a
+ o grémio muitas vezes.
+                  _npc2_
+
+Mensagem:  1022
+<ce> Foi apanhado e sabe disso.
+<ce> Sai da minha vista, %ra.
+
+Mensagem:  1030
+<ce> _qgiver_ é uma verdadeira doninha.
+
+Mensagem:  1031
+<ce> _qgiver_ parece suficientemente agradável,
+<ce> mas eu não jogaria cartas com %g2.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g2 occurs 3 times.
+--               %g3 occurs 3 times.
+--              %pcf occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--      =traveltime_ occurs 2 times.
+--          ___npc1_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--            __inn_ occurs 2 times.
+--            _gold_ occurs 2 times.
+--             _inn_ occurs 2 times.
+--            _npc1_ occurs 8 times.
+--            _npc2_ occurs 13 times.
+--            _npc3_ occurs 12 times.
+--          _qgiver_ occurs 6 times.
+
+QBN:
+Item _letter3a_ letter used 1012
+Item _falseletter1_ letter used 1011
+Item _gold_ gold
+Item _treasure_ trinket
+Item _falseletter2_ letter used 1016
+Item _falseletter3_ letter used 1017
+Item _falseletter4_ letter used 1018
+Item _letter4a_ letter used 1019
+Item _letter5_ letter used 1020
+Item _letter6_ letter used 1021
+
+Person _qgiver_ face 1 group Questor anyInfo 1030 rumors 1031
+Person _npc1_ face 4 group Local_4.0 male remote
+Person _npc2_ face 4 group Local_3.0 male remote
+Person _npc3_ face 2 group Group_6.0 female remote
+
+Place _inn_ remote tavern
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+Foe _ranger_ is Ranger
+Foe _spellsword_ is Spellsword
+Foe _knight_ is Knight
+Foe _monk_ is Monk
+
+--	Quest start-up:
+	place item _treasure_ at _inn_ 
+	start timer _traveltime_ 
+	log 1010 step 0 
+	pick one of _letter1_ _letter2_ _letter3_ _letter4_ 
+	pc at _inn_ set _S.00_ saying 1013 
+
+variable _S.00_
+_questdone_ task:
+	when _S.02_ and _S.03_ and not _traveltime_ and not _S.04_ 
+	give pc _gold_ 
+	end quest 
+
+_badend_ task:
+	when _S.02_ and _S.04_
+	say 1022
+	end quest
+--added badend task and msg 1022. Previously if the PC grabbed the treasure and completed the quest, the questgiver would ignore entirely.
+
+_S.02_ task:
+	toting _letter6_ and _qgiver_ clicked 
+	toting _letter4a_ and _qgiver_ clicked 
+	toting _letter3a_ and _qgiver_ clicked 
+	toting _letter5_ and _qgiver_ clicked 
+
+_S.03_ task:
+	dropped _falseletter3_ at _inn_ saying 1015 
+	dropped _falseletter1_ at _inn_ saying 1015 
+	dropped _falseletter4_ at _inn_ saying 1015 
+	dropped _falseletter2_ at _inn_ saying 1015 
+    clear _S.15_
+
+_S.04_ task:
+	clicked item _treasure_ 
+	pick one of _S.11_ _S.12_ _S.13_ _S.14_ 
+
+_traveltime_ task:
+	end quest 
+
+_S.06_ task:
+	injured _spellsword_ 
+	injured _knight_ 
+	injured _monk_ 
+	injured _ranger_ 
+	say 1014 
+
+_letter1_ task:
+	place item _letter3a_ at _inn_ 
+	get item _falseletter1_ 
+
+_letter2_ task:
+	place item _letter4a_ at _inn_ 
+	get item _falseletter2_ 
+
+_letter3_ task:
+	place item _letter5_ at _inn_ 
+	get item _falseletter3_ 
+
+_letter4_ task:
+	place item _letter6_ at _inn_ 
+	get item _falseletter4_ 
+
+_S.11_ task:
+	create foe _knight_ every 1 minutes 1 times with 100% success 
+
+_S.12_ task:
+	create foe _monk_ every 1 minutes 1 times with 100% success 
+
+_S.13_ task:
+	create foe _spellsword_ every 1 minutes 1 times with 100% success 
+
+_S.14_ task:
+	create foe _ranger_ every 1 minutes 1 times with 100% success 
+--increased spawn rate to 100% in S13 and S14. Doesn't seem to make much sense for the enemy to follow you off to another town and spawn there.
+
+_S.15_ task:
+	clicked item _falseletter4_ 
+	clicked item _falseletter1_ 
+	clicked item _falseletter2_ 
+	clicked item _falseletter3_ 
+	clear _S.03_
+
+_qgclicked_ task:
+	clicked npc _qgiver_
+
+_clearclick_ task:
+	when _qgclicked_ and not _S.02_
+	say 1003
+	clear _clearclick_ _qgclicked_

@@ -1,0 +1,246 @@
+1.	Que habilidade de roubo tem vindo a estudar
+	o mais longo?
+a.	Evasão
+	#4400
+	20 +6
+b.	Furtivo
+	#4401
+	16 +6
+c.	Contra-ataque
+	#4402
+	19 +6
+d.	Lockpicking
+	#4404
+	13 +6
+e.	Carteiristas
+	#4405
+	15 +6
+f.	Escalada
+	#4406
+	18 +6
+g.	Critical-Striking
+	#4407
+	34 +6
+h.	Em execução
+	#4408
+	21 +6
+i.	Salto
+	#4409
+	3 +6
+
+2.	Que escola de magia foi a sua
+	estudando o mais longo?
+a.	Destruição
+	#4410
+	22 +6
+b.	Restauração
+	#4411
+	23 +6
+c.	Ilusão
+	#4412
+	24 +6
+d.	Alteração
+	#4413
+	25 +6
+e.	Thaumaturgy
+	#4414
+	26 +6
+f.	Misticismo
+	#4415
+	27 +6
+
+3.	Onde está a sua perícia em combate?
+a.	Armas de lâmina curta
+	#4416
+	28 +6
+	IT 3 4 1
+b.	Combate corpo a corpo
+	#4417
+	30 +6
+	IT 2 1 0
+c.	Luta de machados
+	#4418
+	31 +6
+	IT 3 14 0
+d.	Armas contundentes
+	#4419
+	32 +6
+	IT 3 11 0
+e.	Tiro com arco
+	#4420
+	33 +6
+	IT 3 16 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+
+4.	Quando criança, o seu apelido era ___.
+a.	Coelho
+	#4421
+	3 +6
+b.	Guppy
+	#4422
+	17 +6
+c.	Quicksilver
+	#4423
+	21 +6
+d.	Raspador
+	#4424
+	30 +6
+e.	Macaco
+	#4425
+	18 +6
+
+5.	É mais amigável do que a maioria com ___.
+a. 	as Harpias Selvagens
+	#4428
+	5 +6
+b. 	os simples Giants
+	#4429
+	6 +6
+c. 	os gloriosos Dragões
+	#4430
+	7 +6
+d. 	as ninfas mais imodesto
+	#4431
+	8 +6
+e. 	a infernal Daedra
+	#4432
+	9 +6
+f. 	os Spriggans bucólicos
+	#4433
+	10 +6
+g. 	os Centauros primitivos
+	#4434
+	11 +6
+h. 	os Imps. mischevious
+	#4435
+	12 +6
+
+6.	À medida que foi envelhecendo, recebeu mais
+	treino mágico em ___.
+a.	A Escola da Destruição
+	#4436
+	22 +6
+b.	A Escola de Restauração
+	#4437
+	23 +6
+c.	A Escola da Ilusão
+	#4438
+	24 +6
+d.	A Escola de Alteraçao
+	#4439
+	25 +6
+e.	A Escola de Thaumaturgy
+	#4440
+	26 +6
+f.	A Escola de Misticismo
+	#4441
+	27 +6
+
+7.	No intervalo do estudo formal, gastou o seu
+	tempo ___.
+a. 	socializando com aristocratas
+	1 +6
+	r3 +5
+	r0 -5
+b. 	aprendendo os espertalhões de rua
+	2 +6
+	r0 +2
+	r4 +3
+	r3 -5
+c. 	prática de acrobacia
+	3 +2
+	20 +2
+	18 +2
+d. 	invasão de propriedade
+	16 +6
+e. 	aprendizagem de economia
+	14 +6
+f. 	natação
+	17 +6
+g. 	sparring
+	34 +6
+
+8.	De todos os tipos desagradáveis, tem o
+	mais ódio pessoal por ___.
+a.	Sacerdotes hipócritas
+	#4442
+	AE M 8 12 +3
+b.	Feiticeiros diabólicos
+	#4443
+	AE M 8 2 +4
+c.	Camponeses estúpidos
+	#4444
+	AE M 8 8 +3
+d.	Barões ladrões de poder
+	#4445
+	AE M 8 17 +4
+e.	Assassinos imorais
+	#4446
+	AE M 8 11 +2
+
+9.	O que o motiva para uma vida de
+	aventura?
+a.	Riqueza
+	GP +500
+b.	Fama
+	r4 +10
+	r2 +10
+c.	Conhecimento
+	IT 7 0 0
+d.	Diversão
+	1 +3
+	2 +3
+e.	Ajudar os outros
+	r0 +10
+
+10.	Que deus, se é que existe, venera?
+a.	Nenhum
+	r2 +5
+b.	Arkay, Deus do Nascimento e da Morte
+	rf82 +5
+c.	Zenithar, Deus do Comércio
+	rf84 +5
+d.	Mara, a Deusa Mãe
+	rf88 +5
+e.	Dibella, Deusa da Beleza
+	rf98 +5
+f.	Julianos, Deus da Lógica
+	rf94 +5
+g.	Akatosh, Deus do Tempo
+	rf92 +5
+h.	Stendarr, Deus da Misericórdia
+	rf106 +5
+i.	Kynareth, Deusa do Ar
+	rf36 +5
+
+11.	Antes de partir para a Cidade Imperial,
+	a tua mãe deu-te ___.
+a.	100 peças de ouro
+	GP +100
+b.	O seu livro favorito
+	IT 7 0 0
+c.	Uma cuirass
+	IT 2 0 0
+d.	Uma pérola
+	IT 22 1 0
+
+12.	Tem o maior problema ___.
+a.	Resistência aos venenos
+	RP -10
+b.	Ficar acordado e alerta
+	FT -5
+c.	O convívio com os outros
+	RR -5
+d.	Evitar doenças
+	RD -5
+e.	Resistir à magia
+	MR -5
+f.	Lutar sem magia
+	TH -5
+
+

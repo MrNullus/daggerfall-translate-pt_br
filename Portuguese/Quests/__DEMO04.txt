@@ -1,0 +1,62 @@
+- Esta busca é para testar o suporte de macro texto inicial
+
+Quest: __DEMO04
+
+
+QRC:
+
+Mensagem: 1010
+<ce> Um estafeta de cachos vermelhos assombra-o com um grito de
+<ce> "Carta para %pcn! Hey que deve ser
+<ce> você. Aqui, toma isto. Tem de ir. Outro
+<ce> entregas a serem feitas.
+
+Mensagem: 1020
+<ce> Ah, obrigado por responder à minha carta,
+<ce> %pcf. Eu sou a Senhora Brisienna. Deixe
+<ce> me trazê-lo até à data sobre assuntos. O espectáculo
+<ce> do Rei Lisandus assombra as ruas de
+<ce> Queda da adaga à noite. A tentar comunicar
+<ce> com ele é fútil. Ele irá ocasionalmente
+<ce> lamentar a palavra "Vingança", mas isso é a
+<ce> única palavra coerente que alguma vez o ouvi
+<ce> absoluto. Se alguma vez estiver em Daggerfall, não
+<ce> vaguear pela cidade durante a noite. Tem a certeza de
+<ce> ser atacado pela sua legião de fantasmas.
+
+Message: 1030
+%qdt:
+ Encontrei-me com Lady Brisienna numa sala de tabernas. Ela
+ disse-me que as três grandes potências do Iliac
+ baía são Daggerfall, Wayrest, e Sentinel. Se eu
+ sou investigar o mistério do fantasma de Lisandus,
+ Devo começar por falar com as famílias reais
+ destes feudos.
+
+Message: 1040
+Lady Brisienna has taken up lodging at _dirtypit_ in __dirtypit_.
+
+Mensagem: 1050
+<ce> Vou dar-lhe uma dica %ra.
+<ce> Se quiser ter sucesso na magia,
+<ce> juntar-se à guilda dos magos.
+
+Mensagem: 1060
+<ce> Uma pequena dica para si. Ponha o seu dinheiro
+<ce> no banco de %reg. Peça-lhes que dêem
+<ce> as suas cartas de crédito. Elas dificilmente
+<ce> pesar uma coisa.
+
+Mensagem: 1070
+<ce> Para que este tutorial continue, deverá ir a um
+<ce> grande cidade, tal como a cidade de Daggerfall. Nós
+<ce> retomar as lições em =2dagger_ days. Isto
+<ce> deve dar-lhe muito tempo para lá chegar.
+
+QBN:
+
+Clock _2dagger_ 6.22:40 0 flag 1 range 0 1
+Place _dirtypit_ remote tavern
+
+- Ponto de entrada
+say 1040

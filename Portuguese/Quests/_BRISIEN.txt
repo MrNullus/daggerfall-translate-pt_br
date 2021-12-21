@@ -1,0 +1,256 @@
+-- Busca: C:\QUESTSWORKING\_BRISIEN.Qbn.
+-- InícioPor: carta
+-- Questee: qualquer pessoa
+-- Repute: 0
+-- QuestId: 0
+Mensagens: 27
+Busca: _BRISIEN
+DisplayName: Senhora Brisienna
+-- Painéis de mensagens
+QRC:
+
+RecuseQuest:  [1001]
+Erro: Questtext 1001 chamado em BRISIEN.Q
+
+AcceptQuest:  [1002]
+Erro: Questtext 1002 chamado em BRISIEN.Q
+
+QuestFail:  [1003]
+Erro: Questtext 1003 chamado em BRISIEN.Q
+
+RumoresDuringQuest:  [1005]
+Os profetas dizem que em breve será reclamado o que não foi reclamado.
+<--->
+Lady Brisienna aguarda alguém no _dirtypit_ em __dirtypit_.
+<--->
+Aquilo foi uma tempestade. Magicamente criada, dizem muitos.
+<--->
+Lady Brisienna alojou-se em _dirtypit_ em __dirtypit_.
+
+RumoresPostfailure:  [1006]
+Lady Brisienna deixou _dirtypit_, murmurando sobre traidores ao Império.
+
+RumoresPostsuccess:  [1007]
+Lady Brisienna deixou _dirtypit_. Ela deve ter encontrado quem procurava.
+
+Mensagem:  1012
+Lady Magnessen? Ela é o emissário das Lâminas em Queda de Punhal.
+<--->
+Lady Magnessen faz parte do cenário regularmente no Castle Daggerfall.
+<--->
+Lady Magnessen foi anteriormente empregada por Mynisera, quando era rainha.
+
+Mensagem:  1013
+Lady Magnessen trabalhou em tempos para a Rainha Mãe, mas sempre para o Imperador.
+<--->
+Lady Magnessen é a irmã do Grande Cavaleiro, líder das Lâminas.
+<--->
+Ouvi dizer que Lady Magnessen foi acusada de espionagem. Ninguém sabe onde ela está agora.
+
+Mensagem:  1015
+<ce> Ah, obrigado por responder à minha carta,
+<ce> %pcf. Eu sou a Senhora Brisienna. Deixe
+<ce> me trazê-lo até à data sobre assuntos. O espectáculo
+<ce> do Rei Lisandus assombra as ruas de
+<ce> Queda da adaga à noite. A tentar comunicar
+<ce> com ele é fútil. Ele irá ocasionalmente
+<ce> lamentar a palavra "Vingança", mas isso é a
+<ce> única palavra coerente que alguma vez o ouvi
+<ce> absoluto. Se alguma vez estiver em Daggerfall, não
+<ce> vaguear pela cidade durante a noite. Tem a certeza de
+<ce> ser atacado pela sua legião de fantasmas.
+<ce>                                    
+<ce> Seria provavelmente mais proveitoso para
+<ce> investigar aqueles que possam ter cometido um erro
+<ce> Lisandus para encontrar a causa por detrás do seu tormento.
+<ce> Não sei se a família real de Daggerfall
+<ce> ou outra pessoa ou pessoas mais merecedoras
+<ce> suspeição. As grandes potências da Baía,
+<ce> Sentinela, Wayrest, e Daggerfall podem ser
+<ce> bons lugares para começar.
+<ce> (continuação...)
+
+Mensagem:  1016
+<ce> No que respeita à carta, a do Imperador
+<ce> agente diz que não foi capaz de entregar em mão
+<ce> à Rainha por causa da guerra. Ele contratou um
+<ce> estafeta que supostamente entregou a carta
+<ce> no seu lugar. Não sabemos sequer o nome de
+<ce> este mensageiro. Obviamente, há pouco
+<ce> informação de utilização, mas valeria a pena
+<ce> para ver se a carta chegou ao Castelo
+<ce> Daggerfall at all. Como se decide fazer isto
+<ce> é inteiramente a sua decisão. Irei contactar-vos
+<ce> se alguma nova informação deve vir à tona.
+<ce>                                    
+<ce> Vou deixar Daggerfall em breve. A minha posição aqui
+<ce> foi comprometida e a minha vida está em perigo.
+<ce> não mencione o meu nome em tribunal. É mais
+<ce> susceptível de doer do que ajudar. Boa sorte, e
+<ce> cuidado com as costas, %pcf.
+
+Mensagem:  1020
+Caro %pcn,
+ 
+     Ouvi falar do vosso acidente no mar, e temi o
+ pior. Agora que ouvi dizer que estás vivo e bem, eu
+ gostaria de ter a oportunidade de se encontrar consigo e discutir
+ a missão do nosso amado Imperador na Baía de Iliac.
+ 
+     Permitam-me que me apresente. Eu sou a Senhora Magnessen,
+ o agente do Imperador no tribunal de Daggerfall. O meu
+ A posição não é tão oficial como um embaixador. Nenhum mas
+ outros agentes do Imperador sabem da minha verdadeira filiação.
+ A Baía de Iliac está repleta de rebeldes contra o Imperador.
+ trono, pelo que a sua discrição é necessária.
+ 
+     Para o efeito da nossa reunião, ocuparei um quarto
+ numa pousada, _dirtypit_ em __dirtypit_
+ de Daggerfall, durante um mês. Depois disso, não mais
+ estar disponível. Espero-vos o mais depressa possível.
+ 
+<ce> Atenciosamente,
+ 
+<ce> Brisienna, Lady Magnessen
+
+Mensagem:  1021
+%pcn,
+ 
+     Enviei-lhe uma carta há semanas. Só espero
+ apanhou-o. Se este se cruzar com o seu caminho
+ depois de me teres visitado no teu caminho para me veres em
+ __dirtypit_ por favor não se ofenda.
+ Como mencionei na carta anterior, eu sou o
+ O agente do imperador em Daggerfall e é imperativo
+ que falo convosco. Prolonguei a minha estadia em
+ _dirtypit_ em __dirtypit_ durante mais duas semanas.
+ 
+ É claro que há a possibilidade de ter
+ intencionalmente me esnobou e se esquivou ao seu dever
+ o Imperador. Espero que não seja esse o caso. Se o senhor
+ não chegar, serei forçado a assumir que está
+ um traidor à sua Majestade Imperial, Uriel Septim VII.
+ 
+<ce> Atenciosamente,
+ 
+<ce> Brisienna, Lady Magnessen
+
+Mensagem:  1022
+%pcn,
+ 
+ Esperei e nunca chegou. Informarei
+ isto ao Imperador. Se eu tiver o meu caminho, o senhor
+ ser barrado ao serviço.
+ 
+<ce> Lady Magnessen
+
+Mensagem:  1026
+<ce> Abordado por uma página jovem que sorri em
+<ce> reconhecimento e não pergunta o seu nome antes
+<ce> entrega-lhe uma carta dirigida a si. Para
+<ce> todas as suas perguntas, ele apenas responde
+<ce> com um olhar em branco e um sorriso.
+                                     <--->
+<ce> Uma carta é pressionada na sua mão. Gira-se
+<ce> para ver quem lho deu. Vislumbra-se
+<ce> da farda que desaparece no meio da multidão.
+                                     <--->
+<ce> Uma página que avança dizendo "Carta para si
+<ce> %pcn", e entrega-lhe uma nota.
+                                     <--->
+<ce> Um mensageiro chega até si com uma carta em
+<ce> mão. "Foi-me dito para entregar esta carta a
+<ce> alguém que corresponda à sua descrição", diz
+<ce> o mensageiro. À medida que o leva, o estafeta
+<ce> vira e caminha rapidamente para longe.
+                                     <--->
+<ce> Chegar à sua mochila para algo a
+<ce> come, espias uma nota. Não estava lá antes.
+                                     <--->
+<ce> Um estafeta de cachos vermelhos assombra-o com um grito de
+<ce> "Carta para %pcn! Hey que deve ser
+<ce> você. Aqui, toma isto. Tem de ir. Outro
+<ce> entregas a serem feitas.
+
+Mensagem:  1025
+<ce> Acorda-se e olha-se à volta da sala. Algumas horas
+<ce> atrás, estava num barco, a caminho de Daggerfall,
+<ce> quando uma tempestade de força sobrenatural ferveu
+<ce> sobre a Baía de Iliac como uma criatura maléfica. O seu
+<ce> o barco foi destruído, mas conseguiu nadar
+<ce> através da água de batedura até uma rocha promontório.
+<ce> lá encontrou uma caverna e escapou à fúria do
+<ce> tempestade. Tinha acabado de acender uma pequena fogueira quando uma
+<ce> mudslide selou-o por dentro. O seu medo de ser
+<ce> enterrado vivo acalmado quando se viu o corredor
+<ce> conduzindo para fora da caverna. Talvez haja uma maneira
+<ce> afinal de contas, para fora desta caverna. Uma vez livre da gruta,
+<ce> pode iniciar a busca do Imperador.
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 10 times.
+--              %pcn occurs 6 times.
+--              %qdt occurs 2 times.
+--       __dirtypit_ occurs 16 times.
+
+QBN:
+Item _letter1_ letter used 1020
+Item _letter2_ letter used 1021
+Item stopMainQuest letter used 1022
+
+Person ladyBrisienna face 1 named Lady_Brisienna anyInfo 1012 rumors 1013
+
+Place PiratesHold permanent PirateerHold1
+Place _dirtypit_ remote tavern
+
+Clock _invitepc_ 7.00:00 14.00:00
+Clock _remindpc_ 30.00:00 0 flag 1 range 0 1
+Clock _pcfailed_ 14.00:00 0 flag 1 range 0 1
+Clock _oneday_ 1.00:00 0 flag 1 range 0 1
+
+
+--	Quest start-up:
+	dialog link for person ladyBrisienna 
+	log 1010 step 0 
+	pc at PiratesHold set _exitstarter_ 
+	say 1025 
+
+_invitepc_ task:
+	add dialog for person ladyBrisienna 
+	start timer _remindpc_ 
+	give pc _letter1_ notify 1026 
+	create npc at _dirtypit_ 
+	place npc ladyBrisienna at _dirtypit_ 
+
+_remindpc_ task:
+	start timer _pcfailed_ 
+	give pc _letter2_ notify 1026 
+
+_pcfailed_ task:
+	start timer _oneday_ 
+	change repute with ladyBrisienna by -15 
+	give pc stopMainQuest notify 1026 
+
+_meetladyb_ task:
+	clicked npc ladyBrisienna 
+	start timer _oneday_ 
+	stop timer _invitepc_ 
+	stop timer _pcfailed_ 
+	stop timer _remindpc_ 
+	log 1011 step 1 
+	start task _S.06_ 
+	say 1015 
+	say 1016 
+
+_oneday_ task:
+	end quest 
+
+variable _exitstarter_
+until _exitstarter_ performed:
+	start quest 999 999 
+	start timer _invitepc_ 
+	remove log step 0 
+
+MetLadyBrisienna _S.06_

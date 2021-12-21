@@ -1,0 +1,50 @@
+---- Example quest used to test Person resource
+---- Send player on a hunt to click both the King and Queen of Daggerfall
+
+Quest: __DEMO07
+
+
+QRC:
+
+QuestLogEntry:  [1010]
+%qdt
+    Vai conhecer _king_
+ numa pousada, _dirtypit_ em __dirtypit_
+ e visite _queen_ in Castle Daggerfall.
+
+Mensagem: 1030
+Hey %pcn, basta clicar em _king_!
+
+Mensagem: 1035
+Hey %pcn, basta clicar em _queen_!
+
+Mensagem: 1040
+Muito bem feito, %pcn. Clicou no botão
+Rei e Rainha da Queda da Adaga.
+
+QBN:
+
+Place _dirtypit_ local tavern
+
+Person _king_ named King_Gothryd
+Person _queen_ named Queen_Aubk-i atHome
+
+
+---- Quest startup
+log 1010 step 0
+create npc at _dirtypit_
+place npc _king_ at _dirtypit_
+
+_clickedKing_ task:
+clicked npc _king_
+say 1030
+
+_clickedQueen_ task:
+clicked npc _queen_
+say 1035
+
+_clickedBoth_ task:
+when _clickedKing_ and _clickedQueen_
+say 1040
+remove log step 0
+end quest

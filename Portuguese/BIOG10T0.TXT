@@ -1,0 +1,212 @@
+1.	De todos os tipos desagradáveis, tem o
+	mais ódio pessoal por ___.
+a.	Sacerdotes hipócritas
+	#4650
+	!4651
+	AE M 8 12 +3
+b.	Feiticeiros diabólicos
+	#4652
+	!4653
+	AE M 8 2 +4
+c.	Barões ladrões de poder
+	#4654
+	!4655
+	AE M 8 17 +4
+d.	Comerciantes Gananciosos
+	#4656
+	!4657
+	AE M 8 11 +2
+
+2.	A única habilidade que não se podia trabalhar
+	sem deve ser ___.
+a.	Lockpicking
+	#4522
+	13 +6
+b.	Carteiristas
+	#4523
+	15 +6
+c.	Movimento furtivo
+	#4524
+	16 +6
+d.	Evasão
+	#4525
+	20 +6
+e.	Escalada
+	#4526
+	18 +6
+f.	Contra-ataque
+	#4527
+	19 +6
+
+3.	Onde está a sua perícia em combate?
+a.	Armas de lâmina curta
+	#4200
+	IT 3 0 2
+	28 +6
+b.	Combate corpo a corpo
+	#4201
+	30 +6
+	IT 2 1 0
+c.	Luta de machados
+	#4202
+	31 +6
+	IT 3 14 0
+d.	Armas contundentes
+	#4203
+	32 +6
+	IT 3 11 0
+e.	Tiro com arco
+	#4204
+	33 +6
+	IT 3 16 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+
+4.	Em agradecimento pelos serviços prestados, a
+	O Imperador deu-lhe ___.
+a.	Mais de 200 peças de ouro
+	#4528
+	GP +250
+b.	Uma adaga de ébano
+	#4529
+	IT 3 0 7
+c.	Um livro interessante
+	#4530
+	IT 7 0 0
+d.	Um rubi
+	#4531
+	IT 14 0 0
+e.	Um bastão prateado
+	#4532
+	IT 3 2 2
+f.	Um amuleto
+	#4192
+	IT 25 0 0
+
+5.	Quando criança, o seu apelido era ___.
+a.	Coelho
+	3 +6
+b.	Guppy
+	17 +6
+c.	Quicksilver
+	21 +6
+d.	Raspador
+	30 +6
+e.	Macaco
+	18 +6
+
+6.	É mais amigável do que a maioria com ___.
+a. 	as Harpias Selvagens
+	5 +6
+b. 	os simples Giants
+	6 +6
+c. 	os gloriosos Dragões
+	7 +6
+d. 	as ninfas mais imodesto
+	8 +6
+e. 	a infernal Daedra
+	9 +6
+f. 	os Spriggans bucólicos
+	10 +6
+g. 	os Centauros primitivos
+	11 +6
+h. 	os Imps. mischevious
+	12 +6
+
+7.	Desde a infância, tem salvo ___.
+a.	100 peças de ouro
+	GP +100
+b.	O seu livro favorito
+	IT 7 0 0
+c.	Uma cuirass
+	IT 2 0 0
+d.	Uma pérola
+	IT 22 1 0
+
+8.	Tanto quanto possível, você ___.
+a. 	socializar-se com aristocratas
+	1 +6
+	r3 +5
+	r0 -5
+b. 	aprender os espertalhões de rua
+	2 +6
+	r0 +2
+	r4 +3
+	r3 -5
+c. 	praticar a acrobacia
+	3 +2
+	20 +2
+	18 +2
+d. 	trespasse
+	13 +6
+e. 	estudar economia
+	14 +6
+f. 	nadar
+	17 +6
+g. 	spar
+	34 +6
+
+9.	O que o motiva para uma vida de
+	aventura?
+a.	Riqueza
+	GP +500
+b.	Fama
+	r4 +10
+	r2 +10
+c.	Conhecimento
+	IT 7 0 0
+d.	Diversão
+	1 +3
+	2 +3
+e.	Ajudar os outros
+	r0 +10
+
+10.	Que deus, se é que existe, venera?
+a.	Nenhum
+	r2 +5
+b.	Arkay, Deus do Nascimento e da Morte
+	rf82 +5
+c.	Zenithar, Deus do Comércio
+	rf84 +5
+d.	Mara, a Deusa Mãe
+	rf88 +5
+e.	Dibella, Deusa da Beleza
+	rf98 +5
+f.	Julianos, Deus da Lógica
+	rf94 +5
+g.	Akatosh, Deus do Tempo
+	rf92 +5
+h.	Stendarr, Deus da Misericórdia
+	rf106 +5
+i.	Kynareth, Deusa do Ar
+	rf36 +5
+
+11.	Antes de partirem para a Cidade Imperial,
+	que trouxeram convosco ___.
+a.	100 peças de ouro
+	GP +100
+b.	Um livro
+	IT 7 0 0
+c.	Um balde
+	IT 2 7 1
+d.	Gauntlets
+	IT 2 1 0
+
+12.	Tem o maior problema ___.
+a.	Resistência aos venenos
+	RP -10
+b.	Ficar acordado e alerta
+	FT -5
+c.	O convívio com os outros
+	RR -5
+d.	Evitar doenças
+	RD -5
+e.	Resistir à magia 
+	MR -5
+f.	Luta 
+	TH -5
+

@@ -1,0 +1,192 @@
+Quest: __DEMO11
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce> Eu sou _qgiver_.
+<ce> Como regra, apenas os membros do grémio são
+<ce> pago por trabalho. No entanto, eu tenho
+<ce> uma pequena tarefa que precisa de ser feita.
+<ce> se o fizesse de graça, eu
+<ce> daria uma boa palavra por si
+<ce> com o grémio. Está disposto a isso?
+                                     <--->
+<ce> Eu sou _qgiver_. Trabalho de guild
+<ce> apenas para membros do grémio. No entanto, I
+<ce> têm um pequeno trabalho que mais ninguém
+<ce> está disposto a fazer. Um dos nossos mais
+<ce> mestre excêntrico é absolutamente
+<ce> insistir que lhe arranjemos uma amostra de
+<ce> _ingrediente_, que nós somos
+<ce> recém saído de. Se tiver algum para
+<ce> me, ficaria muito grato.
+<ce> Você está de pé com a guilda
+<ce> iria certamente melhorar.
+
+RecuseQuest:  [1001]
+<ce> Devia ter sabido. Estou cansado
+<ce> desta conversa %pcn.
+<ce> bom dia.
+
+AcceptQuest:  [1002]
+<ce> Uma excelente atitude %pcf.
+<ce> Preciso de algum _ingrediente_.
+<ce> O único espécime que conheço em
+<ce> o momento é encontrado em
+<ce> ___morreio_. Tem
+<ce> =traveltime_ days to bring it back.
+
+QuestComplete:  [1004]
+<ce> Já vi amostras melhores. Fiz
+<ce> senta-se nele durante todo o caminho de volta?
+<ce> Em qualquer caso, serve. Eu vou
+<ce> certificar-se de que se fala de
+<ce> com favor nos salões do grémio.
+
+RumoresDuringQuest:  [1005]
+Aquele mago maluco do Grémio insiste que ___morras_ tem o melhor _ingrediente_
+
+RumoresPostfailure:  [1006]
+Fiz uma fervura no outro dia ... mas cicatrizou.
+<--->
+Acabei de ter uma conversa de três horas sobre o tempo.
+<--->
+O tempo é bastante habitual para esta época do ano.
+<--->
+Parece um pouco fresco em %cn para esta época do ano.
+<--->
+É certamente muito mais quente hoje do que nesta altura no ano passado.
+<--->
+A minha tia-avó vai a um especialista em toda a baía.
+<--->
+É sempre engraçado a que horas escurece por aqui.
+<--->
+Deveríamos erguer uma estátua de guerra por aqui.
+<--->
+As crianças de hoje em dia com a sua magia. %oth, não sei.
+<--->
+Tive o sonho mais estranho ontem à noite.
+<--->
+Ouvi uma grande anedota. %jok
+<--->
+%jok Na verdade, isso é uma piada.
+<--->
+%jok Pode explicar-me isso?
+<--->
+O sistema legal em %reg tem pontos bons e pontos maus.
+
+RumoresPostsuccess:  [1007]
+Fiz uma fervura no outro dia ... mas cicatrizou.
+<--->
+Acabei de ter uma conversa de três horas sobre o tempo.
+<--->
+O tempo é bastante habitual para esta época do ano.
+<--->
+Parece um pouco fresco em %cn para esta época do ano.
+<--->
+É certamente muito mais quente hoje do que nesta altura no ano passado.
+<--->
+A minha tia-avó vai a um especialista em toda a baía.
+<--->
+É sempre engraçado a que horas escurece por aqui.
+<--->
+Deveríamos erguer uma estátua de guerra por aqui.
+<--->
+As crianças de hoje em dia com a sua magia. %oth, não sei.
+<--->
+Tive o sonho mais estranho ontem à noite.
+<--->
+Ouvi uma grande anedota. %jok
+<--->
+%jok Na verdade, isso é uma piada.
+<--->
+%jok Pode explicar-me isso?
+<--->
+O sistema legal em %reg tem pontos bons e pontos maus.
+
+QuestorPostsuccess:  [1008]
+Não me esqueci de si, %pcf. Você é a %ra que recebeu o _ingrediente_.
+
+QuestorPostfailure:  [1009]
+<ce> Não foi uma coisa muito difícil que eu perguntei
+<ce> que faça, %pcf. Apenas me arranje
+<ce> algum _ingrediente_. E não conseguia fazer
+<ce> isso. Porque deveria eu desperdiçar o meu
+<ce> respirar sobre si?
+
+QuestLogEntry:  [1010]
+%qdt, eu era
+ pediu para encontrar uma amostra de
+ ingrediente_ que é
+ supostamente escondido
+ em ___moradia_.
+ _qgiver_ dos Mages
+ Grémio de ___qgiver_
+ deu-me =tempo_de_viagem dias para obter
+ volta a %g2.
+
+Mensagem:  1040
+<ce> Este deve ser o _ingrediente_
+<ce> _qgiver_ pediu-lhe para encontrar.
+
+Mensagem:  1080
+<ce> Como um agradecimento especial do
+<ce> Mages Guild, permita-me apresentar
+<ce> você com este mapa para ___newdung_.
+<ce> compreendo que pessoas como você
+<ce> salivar sobre tais coisas.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 2 times.
+--               %g2 occurs 2 times.
+--              %jok occurs 6 times.
+--              %oth occurs 10 times.
+--              %pcf occurs 3 times.
+--              %pcn occurs 3 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 27 times.
+--              %reg occurs 2 times.
+--      =traveltime_ occurs 2 times.
+--       ___dungeon_ occurs 3 times.
+--       ___newdung_ occurs 1 time.
+--        ___qgiver_ occurs 1 time.
+--      _ingredient_ occurs 61 times.
+--          _qgiver_ occurs 4 times.
+
+QBN:
+Item _ingredient_ organs
+
+Person _qgiver_ group Questor male
+
+Place _dungeon_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _traveltime_ 00:00 0 flag 17 range 0 2
+
+
+--	Quest start-up:
+	place item _ingredient_ at _dungeon_ 
+	start timer _traveltime_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ _nomap_ 
+
+_traveltime_ task:
+	end quest 
+
+_giveingredient_ task:
+	toting _ingredient_ and _qgiver_ clicked 
+	give pc nothing 
+	end quest 
+
+_dummymage_ task:
+	clicked item _ingredient_ 
+	say 1040 
+
+variable _map_
+variable _nomap_
+_S.05_ task:
+	when _map_ and _giveingredient_ 
+	reveal _newdung_ saying 1080 

@@ -1,0 +1,171 @@
+Quest: __DEMO12
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce> %oth, há mais alguma coisa
+<ce> exasperante do que a descoberta de que a múmia
+<ce> envoltórios que estava a planear utilizar num
+<ce> a poção ficou toda verde? Eu poderia
+<ce> utilizar os invólucros do Grémio, mas a receita
+<ce> apela especificamente para "superlativamente fresco
+<ce> envoltórios de múmia", o que quer que isso signifique. Eu não
+<ce> suponha que estaria disposto a assustar-me um pouco
+<ce> pano de uma múmia que eu sei que tem mais embrulho
+<ce> do que sabe o que fazer com?
+                                     <--->
+<ce> As receitas são um negócio idiota, %pct.
+<ce> Estou a trabalhar numa fórmula que exige uma
+<ce> "bom pedaço de =múmia_. O que é um
+<ce> =múmia_? Uma erva? Um mineral? Bem,
+<ce> pesquisei o assunto e encontrei =múmia_
+<ce> é uma múmia. Imaginem só. E isto em particular
+<ce> a múmia está aqui mesmo em %reg. Poderia eu
+<ce> convencê-lo a ir ao seu túmulo e agarrá-lo
+<ce> um pedaço de =múmia_ para, digamos, _peças de ouro_ douradas?
+
+RecuseQuest:  [1001]
+<ce> Oh, %oth. Eu sei
+<ce> não é um baloiço do local
+<ce> loja geral, mas eu tinha esperanças
+<ce> para um pouco de entusiasmo e
+<ce> o que não é aventuroso.
+
+AcceptQuest:  [1002]
+<ce> Alegremente bom, %pct. Será
+<ce> vale _ouro_ ouro para si. Agora
+<ce> esta tumba da múmia não está muito longe
+<ce> de todo, por isso não deve levar
+<ce> não mais do que =queston_ dias para
+<ce> chega lá, faz o teu agarramento, e vai
+<ce> voltar. Lembre-se, tem de ser
+<ce> fresco -- de preferência fora do seu corpo.
+<ce> O nome do lugar é algo
+<ce> como ___mondung_.
+<ce> é certo que é horrível lá.
+<ce> Talvez queiras trazer uma espada
+<ce> ou alguma coisa do género. Bem, bom
+<ce> sorte, jovem %ra.
+
+QuestComplete:  [1004]
+<ce> Isto é um belo pedaço de
+<ce> embrulho. Muito obrigado. I
+<ce>credite que concordamos em _ouro_ ouro
+<ce> peças, sim?
+
+RumoresDuringQuest:  [1005]
+=mummy_ in ___mondung_ é supostamente tudo o que resta de uma antiga %t de %reg.
+<--->
+=mummy_ era supostamente uma %t na %reg antiga que era demasiado perversa para morrer.
+
+RumoresPostfailure:  [1006]
+Fiz uma fervura no outro dia ... mas cicatrizou.
+<--->
+Acabei de ter uma conversa de três horas sobre o tempo.
+<--->
+O tempo é bastante habitual para esta época do ano.
+<--->
+Parece um pouco fresco em %cn para esta época do ano.
+<--->
+É certamente muito mais quente hoje do que nesta altura no ano passado.
+<--->
+A minha tia-avó vai a um especialista em toda a baía.
+<--->
+É sempre engraçado a que horas escurece por aqui.
+<--->
+Deveríamos erguer uma estátua de guerra por aqui.
+<--->
+As crianças de hoje em dia com a sua magia. %oth, não sei.
+<--->
+Tive o sonho mais estranho ontem à noite.
+<--->
+Ouvi uma grande anedota. %jok
+<--->
+%jok Na verdade, isso é uma piada.
+<--->
+%jok Pode explicar-me isso?
+<--->
+O sistema legal em %reg tem pontos bons e pontos maus.
+
+RumoresPostsuccess:  [1007]
+=mummy_'s reign in %reg começou antes da Primeira Era e terminou consigo.
+<--->
+_qgiver_ finalmente pode terminar %g3 poção graças à contribuição de =múmia_.
+
+QuestorPostsuccess:  [1008]
+Como está, %pcf? Espero que não esteja a apodrecer de múmia nem nada.
+
+QuestorPostfailure:  [1009]
+<ce> Eu precisava desse invólucro, %pcf.
+<ce> É muito aborrecido precisar de algo
+<ce> e não o ter.
+
+QuestLogEntry:  [1010]
+%qdt:
+ _qgiver_ do Grémio dos Mages
+ em ___qgiver_ enviou-me para
+ ___mondung_ para agarrar alguns
+ embrulhos de uma múmia
+ nomeado =múmia_. Eu tenho
+ =queston_ days to complete this quest.
+
+Mensagem:  1011
+<ce> Encontra os invólucros
+<ce> que _qgiver_
+<ce> queria que você fosse de
+<ce> =mummy_.
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 1 time.
+--               %g3 occurs 1 time.
+--              %jok occurs 3 times.
+--              %oth occurs 7 times.
+--              %pcf occurs 2 times.
+--              %pct occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--              %reg occurs 21 times.
+--                %t occurs 2 times.
+--           =mummy_ occurs 11 times.
+--         =queston_ occurs 2 times.
+--       ___mondung_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+--            _gold_ occurs 7 times.
+--          _qgiver_ occurs 3 times.
+
+QBN:
+Item _wrappings_ mummy_wrappings
+Item _gold_ gold
+
+Person _qgiver_ group Questor male
+
+Place _mondung_ remote dungeon0
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _mummy_ is Mummy
+
+--	Quest start-up:
+	start timer _queston_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	place foe _mummy_ at _mondung_ 
+
+_queston_ task:
+	end quest 
+
+_reward_ task:
+	toting _wrappings_ and _qgiver_ clicked 
+	give pc _gold_ 
+	end quest 
+
+variable _qgclicked_
+_S.03_ task:
+	clicked item _wrappings_ 
+	say 1011 
+
+_S.04_ task:
+	injured _mummy_ 
+	give item _wrappings_ to _mummy_ 

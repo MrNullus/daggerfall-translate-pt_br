@@ -1,0 +1,160 @@
+-- Quest: C:\QUESTS\WORKING\30C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Namira
+-- Repute: 0
+-- QuestId: 0
+-- Edited for Daggerfall Unity by Jay_H
+Mensagens: 31
+Missão: 30C00Y00
+DisplayName: Namira's Quest
+-- Painéis de mensagens
+QRC:
+
+QuestorOffer:  [1000]
+<ce> O desejo de poder rói o estômago, não rói,
+<ce> %pcf? Vejo que sim. Desculpe a minha informalidade,
+<ce> mas eu sinto que te conheço, reconheço o teu desejo
+<ce> como se fosse o meu próprio. Quer controlar, e o
+<ce> o pensamento torna-o escravo como um lobo esfomeado. Eu posso
+<ce> enche a barriga, mas primeiro, preciso de saber. Será que
+<ce> matar para preencher este vazio?
+
+RecuseQuest:  [1001]
+<ce> Não?! Agora, gozas comigo, %pcf. Tu tentas-me
+<ce> do meu palácio escuro e depois evitou a minha companhia. Se eu
+<ce> pensava que estava apenas a ser cruel, eu podia respeitar
+<ce> it. Mas suspeito que seja realmente estúpido,
+<ce> que eu não posso aceitar. Por conseguinte, ofereço-lhe um
+<ce> adeus desgostoso.
+
+AcceptQuest:  [1002]
+<ce> Maravilhoso. Deveria ver o olhar nos seus olhos,
+<ce> %pcf. Será poderoso, posso vê-lo neles.
+<ce> Agora, o seu trampolim para o poder é um vampírico
+<ce> antigo que me desagradou, =monster_.
+<ce> sabe que %g é um adversário poderoso, e %g3
+<ce> asilo, ___mondung_, está bem
+<ce> protegido. Mas pode e vai matar %g2. Uma vez
+<ce> tem, vai ter com o meu querido amigo,
+<ce> _qgfriend_ over em __qgfriend_
+<ce> em ___qgfriend_. _qgfriend_.
+<ce> é uma pessoa ocupada, por isso não deixe %g2 à espera mais
+<ce> do que =1stparton_ days. _qgfriend_ terá
+<ce> um presente para si que eu penso que o fará
+<ce> muito feliz. Adeus, %pcf. Iremos encontrar-nos
+<ce> novamente, eu sei.
+
+QuestFail:  [1003]
+<ce> Enquanto aquele vampiro antigo ainda vive, nós temos
+<ce> nada a falar, %pcf.
+
+QuestComplete:  [1004]
+<ce> Olá, %pcn. Eu sou _qgfriend_.
+<ce> Pareces... saciado. Esse assassinato concordou consigo,
+<ce> penso eu. Bem, espero que isto também agrade.
+<ce> Namira disse-me para lhe dar o seu anel. Experimenta-o em
+<ce> e aprenderá o significado da fome e
+<ce> cumprimento. Uma vez que se saiba isso, sabe-se
+<ce> poder. Bom dia, %pcf.
+
+RumoresDuringQuest:  [1005]
+Há um vampiro em ___mondung_ que é tão velho, que já não bebe sangue.
+<--->
+Dizem que o vampiro em ___mondung_ aprendeu a controlar a sua sede de sangue.
+
+RumoresPostfailure:  [1006]
+O vampiro em ___mondung_ aparentemente decidiu que era tempo de seguir em frente.
+<--->
+Parece que afinal o vampiro ainda precisava de sangue. Saiu por alguma razão.
+
+RumoresPósSucesso:  [1007]
+Não me interessa se aquele vampiro conquistou a sua sede de sangue: estou contente por estar morto.
+<--->
+As estrelas de Namira arderam brilhantes ontem à noite. Sempre famintas, nunca satisfeitas.
+
+Mensagem:  1011
+_qgfriend_ is that =qgfriend_ over in __qgfriend_, penso eu. Sim, %di daqui.
+<--->
+_qgfriend_ é o nome do =qgfriend_ em __qgfriend_. Veja a %di.
+
+Mensagem:  1012
+_qgfriend_ é um Gourmand ao serviço de Namira, Daedra Príncipe da Fome.
+<--->
+qgfriend_ é o nome de um dos Gourmands ao serviço da Namira.
+
+Mensagem:  1013
+A dor infligida ao utente do Anel reflecte-se de novo no atacante.
+
+Mensagem:  1020
+%qdt:
+ O Príncipe da Dédra Namira prometeu-me
+ _artifacto_, se eu matar o vampiro
+ =monster_ para ela dentro de =1º dia_de_separton.
+ O seu contacto _qgfriend_ não vai esperar
+ mais tempo do que para mim em __qgfriend_
+ de ___qgfriend_, por isso não posso chegar atrasado. O
+ vampiro supostamente vive em ___mondung_.
+
+Mensagem:  1030
+<ce> =monster_ está morto.  A fome de Namira
+<ce> é saciada -- agora para satisfazer os seus
+<ce> desejos através de relatórios a _qgfriend_.
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 2 times.
+--                %g occurs 1 time.
+--               %g2 occurs 5 times.
+--               %g3 occurs 2 times.
+--              %pcf occurs 10 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--         =monster_ occurs 3 times.
+--        =qgfriend_ occurs 2 times.
+--       ___mondung_ occurs 6 times.
+--      ___qgfriend_ occurs 6 times.
+--        _artifact_ occurs 1 time.
+--        _qgfriend_ occurs 12 times.
+
+QBN:
+Item _artifact_ artifact Ring_of_Namira anyInfo 1013
+
+Person _questgiver_ face 112 named Namira
+Person _qgfriend_ group Librarian anyInfo 1011 rumors 1012
+
+Place _mondung_ remote dungeon
+
+Clock _1stparton_ 00:00 0 flag 1 range 2 5
+
+Foe _monster_ is Ancient_vampire
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	place foe _monster_ at _mondung_ 
+
+_1stparton_ task:
+	end quest 
+
+-- _2ndparton_ removed as nonexistent task
+_pcgetsgold_ task:
+	when _npcclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1030 
+
+_npcclicked_ task:
+	clicked npc _qgfriend_ 
+
+--defining clearclick to prevent out-of-place victory condition
+_clearclick_ task:
+	when _npcclicked_ and not _mondead_
+	say 1003
+	clear _npcclicked_ _clearclick_

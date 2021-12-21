@@ -1,0 +1,53 @@
+---- Exemplo de busca para demonstrar RumoresDuringQuest e link de diálogo
+---- obter informações após (e só após) ouvir o rumor correcto
+---- uma vez um npc falou sobre o rumor correcto a opção de diálogo ligada
+---- estará disponível na secção falar-me sobre
+---- apenas um dos dois rumores revelará o tópico de conversa sobre a pessoa
+---- (tem de mudar a opção de diálogo e depois aparecerá no
+---- fale-me sobre a secção)
+---- pode então pedir aos camponeses o local correcto onde a pessoa
+---- pode ser encontrado
+---- uma (e apenas uma) das três respostas possíveis está a revelar o lugar correcto
+
+Busca: __DEMO18
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce> Ultimamente fala-se muito de uma pessoa misteriosa. Estaria disposto a saber mais sobre os rumores?
+
+RecuseQuest:  [1001]
+<ce> Lamento ouvir isso. Eu compreendo,
+<ce> é claro, mas é decepcionante.
+
+AcceptQuest:  [1002]
+<ce> Isso é bom de ouvir. É preciso perguntar por aí por notícias e rumores.
+
+RumoresDuringQuest:  [1005]
+_thief_ está na cidade. Deve tentar encontrar %g2. Basta perguntar por aí onde pode encontrar o _thief_.
+<--->
+Há rumores sobre uma pessoa misteriosa na cidade, mas infelizmente não posso fornecer um nome.
+
+
+QuestLogEntry:  [1010]
+%qdt:
+ Preciso de perguntar por aí por notícias e rumores sobre uma pessoa misteriosa
+
+Mensagem:  1011
+_ladrão_ foi dito como sendo um mestre ladrão.
+<--->
+_ladrão_ faz todo o trabalho de pés do grémio dos ladrões.
+<--->
+O _lenço_ é aquele =thief_ em _tavern_.
+
+
+QBN:
+
+Pessoa _lief_ face 81 facção The_Thieves_Guild anyInfo 1011
+Local _tavern_ taverna local
+
+-- Arranque de missões:
+	ligação de diálogo para a pessoa _thief_
+	log 1010 passo 0  
+	criar npc _livro_ 
+	place npc _thief_ at _tavern_
