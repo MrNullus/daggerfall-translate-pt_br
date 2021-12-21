@@ -1,0 +1,12 @@
+- Minimal example quest used to demonstrate how to script custom actions
+
+Quest: __DEMO01
+
+QRC:
+
+- No text resources
+
+QBN:
+
+-  Ponto de entrada sem cabeça com acção personalizada
+malabarismo 5 maçãs a cada 2 segundos cai 40%

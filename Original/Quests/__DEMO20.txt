@@ -1,0 +1,46 @@
+---- Exemplo de busca para localizar os tipos de locais "domésticos" ou selvagens
+---- Iniciar a partir da consola: 'startquest __demo20'".
+
+Busca: __DEMO20
+
+
+QRC:
+
+QuestLogEntry:  [1010]
+%qdt
+  Deve encontrar qualquer local de residência
+e também explorar a natureza selvagem.
+
+
+QBN:
+
+---- Arranque da Quest
+log 1010 passo 0
+
+variável _atAnyHome_
+variável _inWilderness_
+
+---- Clear wilderness var ao entrar em qualquer tipo de local
+---- Também re-armas sair de qualquer tarefa para poder disparar novamente
+_entersAnywhere task:
+	quando o pc entra em qualquer lugar
+	clear _inWilderness_
+	clear _exitsAnywhere_
+
+---- Definir wilderness var ao sair de qualquer tipo de local
+---- Também re-armas entra na tarefa de casa para poder disparar novamente
+_exitsAnywhere_ task:
+	quando o computador sai de qualquer lugar
+	setvar _inWilderness_
+	clear _atAnyHome_
+	clear _entersAnywhere_
+	clear _entersAnyHome_
+	
+---- Definir home var ao entrar em qualquer tipo de localização "home
+_entersAnyHome_ task:
+	quando pc entra em farmhome
+	quando o pc entra na casa dos ricos
+	quando o pc entra no poorhome
+	quando o pc entra na tavernhome
+	quando o pc entra no templehome
+	setvar _atAnyHome_

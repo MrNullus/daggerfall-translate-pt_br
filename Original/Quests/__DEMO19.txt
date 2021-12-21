@@ -1,0 +1,46 @@
+---- Exemplo de busca para demonstrar dicas de direcção para locais de calabouços
+
+Busca: __DEMO19
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce> Interessado em testar as suas capacidades de encontrar o caminho?
+
+RecuseQuest:  [1001]
+<ce> Bem, parece que nunca se conhece o caminho certo, não é?
+
+AcceptQuest:  [1002]
+<ce> Excelente! Gostaria de testar se é capaz de encontrar ___lostdung_ por si próprio.
+<ce> Não espere ajuda da minha parte, excepto a única dica
+<ce> para perguntar aos camponeses sobre alguma informação onde ___lostdung_ possa
+<ce> ser encontrado.
+
+QuestLogEntry:  [1010]
+%qdt:
+ Foi-me pedido que encontrasse ___lostdung_ por conta própria.
+ O único conselho que me foi dado foi de perguntar aos camponeses
+ se eles pudessem fornecer alguma informação sobre
+ onde o poderei encontrar.
+
+Mensagem:  1011
+Só sei que ___lostdung_ é um lugar perigoso.
+<--->
+Talvez queira procurar %di deste lugar.
+<--->
+Quer encontrar ___lostdung_? É %di de aqui.
+
+Mensagem:  1012
+Finalmente encontrou ___lostdung_!
+
+QBN:
+
+Lugar ___lostdung_ calabouço remoto qualquerInfo 1011
+
+-- Arranque de missões:
+	log 1010 passo 0
+	pc em _lostdung_ set _S.00_
+
+Tarefa:
+	digamos 1012
+	busca final

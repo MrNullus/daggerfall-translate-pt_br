@@ -1,0 +1,222 @@
+1.	Tem um certo grau de formação
+	com ___.
+a.	Armas de lâmina curta
+	#4454
+	28 +6
+	IT 3 1 3
+b.	Combate corpo a corpo
+	#4455
+	30 +6
+	IT 2 1 0
+c.	Luta de machados
+	#4456
+	31 +6
+	IT 3 14 1
+d.	Armas contundentes
+	#4457
+	32 +6
+	IT 3 2 1
+e.	Tiro com arco
+	#4458
+	33 +6
+	IT 3 16 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+f.	Lâmina comprida
+	#4459
+	29 +6
+	IT 3 8 1
+
+2.	Que habilidade de roubo tem vindo a estudar
+	o mais longo?
+a.	Evasão
+	#4550
+	20 +6
+b.	Furtivo
+	#4551
+	16 +6
+c.	Contra-ataque
+	#4552
+	19 +6
+d.	Lockpicking
+	#4554
+	13 +6
+e.	Carteiristas
+	#4555
+	15 +6
+f.	Escalada
+	#4556
+	18 +6
+g.	Critical-Striking
+	#4557
+	34 +6
+h.	Em execução
+	#4558
+	21 +6
+i.	Salto
+	#4559
+	3 +6
+
+3.	O que o motiva para uma vida de
+	aventura?
+a.	Riqueza
+	#4560
+	GP +500
+b.	Fama
+	#4561
+	r4 +10
+	r2 +10
+c.	Conhecimento
+	#4562
+	IT 7 0 0
+d.	Diversão
+	#4563
+	1 +3
+	2 +3
+e.	Ajudar os outros
+	#4564
+	r0 +10
+
+4.	O seu método criminoso preferido é ___.
+a. 	roubo
+	#4565
+	AF F 7 12 +1
+b. 	assalto
+	#4566
+	AF F 7 12 +1
+c. 	carteiristas
+	#4567
+	AF F 7 12 +1
+d. 	burla
+	#4568
+	AF F 7 12 +1
+e. 	contrabando
+	#4569
+	AF F 7 12 +1
+f. 	roubo de bancos
+	#4570
+	AF F 7 12 +1
+
+5.	Dada a sua escolha de recompensa, você
+	muito provavelmente escolher ___.
+a.	200 peças de ouro
+	#4528
+	GP + 200
+b.	Uma adaga de ébano
+	#4529
+	IT 3 0 7
+c.	Um livro
+	#4530
+	IT 7 0 0
+d.	Um rubi
+	#4531
+	IT 14 0 0
+e.	Um bastão prateado
+	#4532
+	IT 3 2 2
+f.	Um fato de armadura
+	#4196
+	IT 2 2 0
+	IT 2 3 0
+	IT 2 4 0
+	IT 2 0 0
+
+6.	Uma das competências de sobrevivência mais importantes
+	que pegou foi como ___.
+a.	Remendar feridas simples
+	0 +6
+b.	Ingratiate-se
+	1 +6
+c.	Mandar nas pessoas à volta
+	2 +6
+d.	Pechinchar com os comerciantes
+	14 +6
+e.	Lutar com uma faca
+	28 +6
+
+7.	Você era uma criança activa, ___ mais do que qualquer outra
+	senão a sua idade.
+a.	mais rápido
+	21 +6
+b. 	mais sorrateiro
+	16 +6
+c. 	um melhor alpinista
+	18 +6
+d. 	um melhor nadador
+	17 +6
+e. 	um melhor arruaceiro
+	30 +6
+
+8.	Pode obter a maioria das coisas que deseja através de
+	roubo de ___.
+a.	Nobres Ricos
+	IT 25 3 0
+b.	Mages e Sages
+	IT 7 0 0
+c.	Templos estabelecidos
+	IT 10 4 0
+d.	Comerciantes Diversificados
+	IT 25 5 0
+
+9.	A única habilidade que não se podia trabalhar
+	sem deve ser ___.
+a.	Lockpicking
+	13 +6
+b.	Carteiristas
+	15 +6
+c.	Movimento furtivo
+	16 +6
+d.	Evasão
+	20 +6
+e.	Escalada
+	18 +6
+f.	Contra-ataque
+	19 +6
+
+10.	Quando criança, o seu apelido era ___.
+a.	Coelho
+	3 +6
+b.	Guppy
+	17 +6
+c.	Quicksilver
+	21 +6
+d.	Raspador
+	30 +6
+e.	Macaco
+	18 +6
+
+11.	Que deus, se é que existe, venera?
+a.	Nenhum
+	r2 +5
+b.	Arkay, Deus do Nascimento e da Morte
+	rf82 +5
+c.	Zenithar, Deus do Comércio
+	rf84 +5
+d.	Mara, a Deusa Mãe
+	rf88 +5
+e.	Dibella, Deusa da Beleza
+	rf98 +5
+f.	Julianos, Deus da Lógica
+	rf94 +5
+g.	Akatosh, Deus do Tempo
+	rf92 +5
+h.	Stendarr, Deus da Misericórdia
+	rf106 +5
+i.	Kynareth, Deusa do Ar
+	rf36 +5
+
+12.	A sua frágil saúde como criança fez
+	você ___.
+a.	Menos resistente a venenos
+	RP -5
+b.	Menos resistente a doenças
+	RD -5
+c.	Facilmente cansado
+	FT -5
+d.	Menos resistente à magia
+	MR -5
+

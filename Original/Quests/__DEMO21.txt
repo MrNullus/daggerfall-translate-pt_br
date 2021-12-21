@@ -1,0 +1,29 @@
+---- Exemplo de teste de busca "remover inimigo
+
+Busca: __DEMO21
+
+
+QRC:
+
+QuestLogEntry:  [1010]
+%qdt
+    Sobreviva à onda de ratos até que estes fujam!
+
+Mensagem: 1030
+Os ratos voltam todos a correr para os seus buracos!
+
+
+QBN:
+
+O inimigo _rat_ é um rato_ gigante
+Relógio _timer1_ 0.0:15
+
+---- Arranque da Quest
+log 1010 passo 0
+criar inimigo _rat_ a cada 2 minutos indefinidamente com 100% de sucesso 
+temporizador de início _timer1_
+
+_timer1_ tarefa:
+digamos 1030
+remover o inimigo _rat_
+busca final

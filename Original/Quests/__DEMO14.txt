@@ -1,0 +1,35 @@
+---- Exemplo de busca para demonstrar recursos ligados ao diálogo e
+---- adicionar diálogo para revelar qualquer mensagem de informação
+---- qualquer mensagem para pessoa está disponível desde o início, uma vez que não foi estabelecida uma ligação de diálogo
+---- para que o jogador possa perguntar onde pode ser encontrada uma pessoa (através de me falar sobre)
+---- qualquer mensagem de item é escondida porque foi estabelecida uma ligação de diálogo
+---- será revelado quando o jogador clicar em NPC através do diálogo de adição
+
+Quest: __DEMO14
+
+QRC:
+
+Mensagem:  1011
+_someperson_ pode ser encontrado em _tavern_.
+
+Mensagem:  1012
+Esta é uma pequena mensagem informativa sobre qualquer recurso de item...
+
+Mensagem:  1013
+Deve perguntar por aí por _someitem_...
+
+QBN:
+
+Pessoa _someperson_ face 81 facção The_Thieves_Guild anyInfo 1011
+Item _someitem_ trinket anyInfo 1012
+Local _tavern_ taverna local
+
+-- Arranque de missões:
+	ligação de diálogo para o item _someitem_
+	criar npc _someperson_ 
+	lugar npc _someperson_ em _tavern_
+
+Tarefa:
+	clicked npc _someperson_
+	digamos 1013
+	adicionar diálogo para o item _someitem_

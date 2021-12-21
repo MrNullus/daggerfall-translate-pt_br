@@ -1,0 +1,227 @@
+1.	Que escola de magia foi a sua
+	a estudar ao máximo?
+a.	Destruição
+	#4156
+	22 +6
+b.	Restauração
+	#4157
+	23 +6
+c.	Ilusão
+	#4158
+	24 +6
+d.	Alteração
+	#4159
+	25 +6
+e.	Thaumaturgy
+	#4160
+	26 +6
+f.	Misticismo
+	#4161
+	27 +6
+
+2.	Quando criança, o seu apelido era ___.
+a.	Coelho
+	#4450
+	3 +6
+b.	Quicksilver
+	#4451
+	21 +6
+c.	Raspador
+	#4452
+	30 +6
+d.	Macaco
+	#4453
+	18 +6
+
+3.	Tem um certo grau de formação
+	com ___.
+a.	Armas de lâmina curta
+	#4454
+	28 +6
+	IT 3 0 3
+b.	Combate corpo a corpo
+	#4455
+	30 +6
+	IT 2 1 0
+c.	Luta de machados
+	#4456
+	31 +6
+	IT 3 14 0
+d.	Armas contundentes
+	#4457
+	32 +6
+	IT 3 2 0
+e.	Tiro com arco
+	#4458
+	33 +6
+	IT 3 16 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+f.	Lâmina comprida
+	#4459
+	29 +6
+	IT 3 9 0
+
+4.	Sempre que teve uma oportunidade de crescer
+	que gostava de passar tempo ___.
+a. 	socializar com aristocratas
+	#4223
+	1 +6
+	r3 +5
+	r0 -5
+b. 	aprendendo os espertalhões de rua
+	#4224
+	2 +6
+	r0 +2
+	r4 +3
+	r3 -5
+c.	 prática de acrobacia
+	#4225
+	3 +2
+	20 +2
+	18 +2
+d. 	aprendizagem de economia
+	#4226
+	14 +6
+e.	 natação
+	#4228
+	17 +6
+f. 	sparring
+	#4229
+	34 +6
+
+5.	Que habilidade de roubo tem vindo a estudar
+	o mais longo?
+a.	Evasão
+	20 +6
+b.	Furtivo
+	16 +6
+c.	Contra-ataque
+	19 +6
+d.	Lockpicking
+	13 +6
+e.	Carteiristas
+	15 +6
+f.	Escalada
+	18 +6
+g.	Critical-Striking
+	34 +6
+h.	Em execução
+	21 +6
+i.	Salto
+	3 +6
+
+6.	Dada a sua escolha de recompensa, você
+	escolher ___.
+a.	Mais de 200 peças de ouro
+	#4528
+	GP +250
+b.	Uma adaga de ébano
+	#4529
+	IT 3 0 7
+c.	Um livro
+	#4530
+	IT 7 0 0
+d.	Um rubi
+	#4531
+	IT 14 0 0
+e.	Um bastão prateado
+	#4532
+	IT 3 2 2
+f.	Um amuleto
+	#4192
+	IT 25 0 0
+
+7.	O que o motiva para uma vida de
+	aventura?
+a.	Riqueza
+	GP +500
+b.	Fama
+	r4 +10
+	r2 +10
+c.	Conhecimento
+	IT 7 0 0
+d.	Diversão
+	1 +3
+	2 +3
+e.	Ajudar os outros
+	r0 +10
+
+8.	Que deus, se é que existe, venera?
+a.	Nenhum
+	r2 +5
+b.	Arkay, Deus do Nascimento e da Morte
+	rf82 +5
+c.	Zenithar, Deus do Comércio
+	rf84 +5
+d.	Mara, a Deusa Mãe
+	rf88 +5
+e.	Dibella, Deusa da Beleza
+	rf98 +5
+f.	Julianos, Deus da Lógica
+	rf94 +5
+g.	Akatosh, Deus do Tempo
+	rf92 +5
+h.	Stendarr, Deus da Misericórdia
+	rf106 +5
+i.	Kynareth, Deusa do Ar
+	rf36 +5
+
+9.	Tem o maior problema ___.
+a.	Resistência aos venenos
+	RP -10
+b.	Ficar acordado e alerta
+	FT -5
+c.	O convívio com os outros
+	RR -5
+d.	Evitar doenças
+	RD -5
+e.	Resistir à magia
+	MR -5
+f.	Lutar sem magia
+	TH -5
+
+10.	Desde a infância, tem salvo ___.
+a.	100 peças de ouro
+	GP +100
+b.	Um livro interessante
+	IT 7 0 0
+c.	Uma cuirass
+	IT 2 0 0
+d.	Um balde
+	IT 2 7 1
+
+11.	É mais amigável do que a maioria com ___.
+a. 	as Harpias Selvagens
+	5 +6
+b. 	os simples Giants
+	6 +6
+c. 	os gloriosos Dragões
+	7 +6
+d. 	as ninfas mais imodesto
+	8 +6
+e. 	a infernal Daedra
+	9 +6
+f. 	os Spriggans bucólicos
+	10 +6
+g. 	os Centauros primitivos
+	11 +6
+h. 	os Imps. mischevious
+	12 +6
+
+12.	É amigo íntimo de ___.
+a. 	um Monge
+	AF O 8 12 +1
+b. 	a Mage
+	AF O 8 2 +1
+c.	uma Rogue
+	AF O 8 8 +1
+d. 	um Guerreiro
+	AF O 8 17 +1
+e. 	um Assassino
+	AF O 8 11 +1
+

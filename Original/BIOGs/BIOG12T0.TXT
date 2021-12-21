@@ -1,0 +1,240 @@
+1.	O seu tipo de arma favorita é ___.
+a.	Armas de lâmina curta
+	#4200
+	!4900
+	28 +12
+	IT 3 4 2
+b.	Luta de machados
+	#4202
+	!4902
+	31 +12
+	IT 3 15 0
+c.	Armas contundentes
+	#4203
+	!4903
+	32 +12
+	IT 3 13 0
+d.	Tiro com Arco e Flecha
+	#4204
+	!4904
+	33 +12
+	IT 3 17 0
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+	IT 3 18 1
+e.	Longblade
+	#4205
+	!4905
+	29 +12
+	IT 3 8 0
+
+2.	O que o motiva para uma vida de
+	aventura?
+a.	Riqueza
+	#4560
+	GP +500
+b.	Fama
+	#4561
+	r4 +10
+	r2 +10
+c.	Conhecimento
+	#4562
+	IT 7 0 0
+d.	Diversão
+	#4563
+	1 +3
+	2 +3
+e.	Ajudar os outros
+	#4564
+	r0 +10
+	
+3.	Qual das seguintes competências tem
+	estuda há mais tempo?
+a.	Evasão
+	#4550
+	!4400
+	20 +6
+b.	Furtivo
+	#4551
+	!4401
+	16 +6
+c.	Contra-ataque
+	#4552
+	!4402
+	19 +6
+d.	Lockpicking
+	#4554
+	!4404
+	13 +6
+e.	Carteiristas
+	#4555
+	!4405
+	15 +6
+f.	Escalada
+	#4453
+	!4406
+	18 +6
+g.	Critical-Striking
+	#4452
+	!4407
+	34 +6
+h.	Em execução
+	#4451
+	!4408
+	21 +6
+i.	Salto
+	#4450
+	!4409
+	3 +6
+
+4.	Quando criança, o seu apelido era ___.
+a.	Coelho
+	3 +6
+b.	Guppy
+	17 +6
+c.	Quicksilver
+	21 +6
+d.	Raspador
+	30 +6
+e.	Macaco
+	18 +6
+
+5.	Foi-lhe emprestado e mais tarde foi-lhe permitido manter ___.
+a.	200 peças de ouro
+	GP +200
+b.	Um livro
+	IT 7 0 0
+c.	Um flail élfico
+	IT 3 12 3
+d.	A dai-katana
+	IT 3 10 0
+
+6.	Que deus, se é que existe, venera?
+a.	Nenhum
+	r2 +5
+b.	Arkay, Deus do Nascimento e da Morte
+	rf82 +5
+c.	Zenithar, Deus do Comércio
+	rf84 +5
+d.	Mara, a Deusa Mãe
+	rf88 +5
+e.	Dibella, Deusa da Beleza
+	rf98 +5
+f.	Julianos, Deus da Lógica
+	rf94 +5
+g.	Akatosh, Deus do Tempo
+	rf92 +5
+h.	Stendarr, Deus da Misericórdia
+	rf106 +5
+i.	Kynareth, Deusa do Ar
+	rf36 +5
+
+7.	Tem o maior problema ___.
+a.	Resistência aos venenos
+	RP -10
+b.	Ficar acordado e alerta
+	FT -5
+c.	O convívio com os outros
+	RR -5
+d.	Evitar doenças
+	RD -5
+e.	Resistir à magia
+	MR -5
+f.	Luta e separação
+	TH -5
+
+8.	Desde a infância, tem salvo ___.
+a.	100 peças de ouro
+	GP + 100
+b.	Um livro favorito
+	IT 7 0 0
+c.	Uma dúzia de setas
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+	IT 3 18 0
+d.	Uma pérola
+	IT 22 1 0
+
+9.	É mais amigável do que a maioria com ___.
+a. 	as Harpias Selvagens
+	#4764
+	5 +6
+b. 	os simples Giants
+	#4765
+	6 +6
+c. 	os gloriosos Dragões
+	#4766
+	7 +6
+d. 	as ninfas mais imodesto
+	#4767
+	8 +6
+e.	a infernal Daedra
+	#4768
+	9 +6
+f. 	os Spriggans bucólicos
+	#4769
+	10 +6
+g. 	os Centauros primitivos
+	#4770
+	11 +6
+h. 	os Imps. mischevious
+	#4771
+	12 +6
+
+10.	Dadas 200 peças de ouro como recompensa,
+	decidiu ___.
+a.	Salvá-lo.
+	GP +200
+b.	Comprar uma adaga de ébano
+	IT 3 0 7
+c.	Comprar um bom livro
+	IT 7 0 0
+d.	Comprar um rubi
+	IT 14 0 0
+e.	Comprar um bastão de prata
+	IT 3 2 2
+
+11.	Passa qualquer tempo livre que tenha
+	treino com ___.
+a.	armas de lâmina curta
+	28 +6
+b.	Combate corpo a corpo
+	30 +6
+c.	Luta de machados
+	31 +6
+d.	Armas contundentes
+	32 +6
+e.	Tiro com arco
+	33 +6
+f.	Lâmina comprida
+	29 +6
+
+12.	É amigo íntimo de ___.
+a. 	um Monge
+	#4212
+	AF O 8 12 +1
+b. 	a Mage
+	#4213
+	AF O 8 2 +1
+c. 	uma Rogue
+	#4214
+	AF O 8 8 +1
+d. 	um Guerreiro
+	#4215
+	AF O 8 17 +1
+e. 	um Assassino
+	#4216
+	AF O 8 11 +1
+

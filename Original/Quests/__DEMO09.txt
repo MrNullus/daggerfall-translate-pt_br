@@ -1,0 +1,173 @@
+---- Example quest based on M0B00Y16 (kill a random creature inside a local building)
+---- Have modified as only testing specific parts of this quest
+
+Quest: __DEMO09
+
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce> Eu sou _qgiver_.
+<ce> Temos um pedido de um cidadão local.
+<ce> Parece que um animal selvagem se meteu em
+<ce> o seu lugar. Precisamos de alguém para ir matar
+<ce> a coisa. O grémio pagará _ouro_ ouro.
+<ce> quere-lo %pcn?
+
+RecuseQuest:  [1001]
+<ce> Tenho a certeza que alguém mais o fará
+<ce> estar disposto a tomar conta de
+<ce> este urso incómodo.
+
+AcceptQuest:  [1002]
+<ce> "OK, %pcf. Vai a _house_
+<ce> aqui na cidade. Faça isso num só dia.
+<ce> Ninguém quer um animal deixado a vaguear por aí
+<ce> no seu lugar. Volte aqui quando o
+<ce> a besta está morta e eu terei o seu pagamento
+<ce> esperando por si".
+<ce>                                    
+<ce> _qgiver_ grita, "Hey, de que tipo
+ de animal está em _house_?"
+
+QuestComplete:  [1004]
+<ce> Muito bem feito, %pcf.
+<ce> Aqui está o seu _dourado_ ouro.
+
+RumoresDuringQuest:  [1005]
+<ce> Ouviste? Um animal entrou em
+<ce> um edifício na cidade. Espero que eles
+<ce> matá-lo em breve.
+
+RumoresPós-falha:  [1006]
+<ce> O Grémio dos Combatentes matou aquele
+<ce> urso que entrou em _house_.
+<ce> É uma coisa boa tê-los por perto.
+
+RumoresPostsuccess:  [1007]
+<ce> Aquela criatura maltratou alguma mulher antes
+<ce> ser expulso da cidade. Que pena.
+
+QuestorPostsuccess:  [1008]
+<ce> Bom trabalho ao matar aquela besta.
+<ce> O que posso fazer por si?
+
+QuestorPostfailure:  [1009]
+<ce> ouvi dizer que uma criatura comeu o gajo
+<ce> que era dono da casa. Deu-nos um
+<ce> mau representante. Tente fazer melhor da próxima vez.
+
+QuestLogEntry:  [1010]
+%qdt:
+ O Grémio dos Combatentes de ___qgiver_
+ pediu-me para matar uma besta selvagem que
+ entrou em _house_. Tem
+ ser feito num só dia.
+
+Mensagem:  1011
+<ce> O urso está morto.
+
+Mensagem:  1012
+<ce> A harpia está morta.
+
+Mensagem:  1013
+<ce> A aranha está morta.
+
+Mensagem:  1014
+<ce> O tigre está morto.
+
+Mensagem:  1021
+<ce> Ouve-se uma chamada de voz de um
+<ce> andar superior, "É um urso".
+
+Mensagem:  1022
+<ce> Ouve-se uma chamada de voz de um
+<ce> andar superior, "É uma harpia".
+
+Mensagem:  1023
+<ce> Ouve-se uma chamada de voz de um
+<ce> piso superior, "É uma aranha".
+
+Mensagem:  1024
+<ce> Ouve-se uma chamada de voz de um
+<ce> piso superior, "É um tigre".
+
+Mensagem:  1080
+<ce> A propósito, já que parecia ter
+<ce> tanta diversão com aquela besta, aqui está
+<ce> um mapa para ___newdung_.  Divirta-se.
+
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcf occurs 2 times.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--       ___newdung_ occurs 3 times.
+--        ___qgiver_ occurs 1 time.
+--            _gold_ occurs 9 times.
+--           _house_ occurs 5 times.
+--          _qgiver_ occurs 2 times.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor male
+
+Place _house_ local random
+Place _newdung_ remote dungeon
+
+Clock _2dung_ 1.00:00 0 flag 1 range 0 1
+
+Foe _bear_ is Grizzley_bear
+Foe _tiger_ is Sabretooth_tiger
+Foe _harpy_ is Harpy
+Foe _spider_ is Spider
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _house_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ _nomap_ _nomap_ 
+	pick one of _monster1_ _monster2_ _monster3_ _monster4_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _spider_ saying 1013 
+	killed 1 _tiger_ saying 1014 
+	killed 1 _harpy_ saying 1012 
+	killed 1 _bear_ saying 1011 
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+	give pc _gold_ 
+	end quest 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 
+
+variable _map_
+variable _nomap_
+_S.06_ task:
+	when _map_ and _S.02_ 
+	reveal _newdung_ saying 1080 
+
+_monster1_ task:
+	say 1021 
+	place foe _bear_ at _house_ 
+
+_monster2_ task:
+	say 1022 
+	place foe _harpy_ at _house_ 
+
+_monster3_ task:
+	say 1023 
+	place foe _spider_ at _house_ 
+
+_monster4_ task:
+	say 1024 
+	place foe _tiger_ at _house_ 

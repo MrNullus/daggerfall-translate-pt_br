@@ -1,0 +1,127 @@
+-- Quest: C:\QUESTS\WORKING\00B00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: Julianos
+-- Repute: 0
+-- QuestId: 0
+Mensagens: 32
+Busca: 00B00Y00
+DisplayName: O Preço do Conhecimento
+-- Painéis de mensagens
+QRC:
+
+QuestorOffer:  [1000]
+<ce> Temos apenas uma regra na Escola de Julianos -- o conhecimento
+<ce> é para ser partilhado. Infelizmente, temos um antigo membro
+<ce> da nossa ordem que abandonou esta regra e precisa de ser
+<ce> castigado. Se lhe oferecêssemos _reward_ peças de ouro, seria
+<ce> persegue e mata este antigo membro da nossa Escola?
+
+RecuseQuest:  [1001]
+<ce> Decepcionante. Encontraremos, sem dúvida, outra pessoa.
+
+AcceptQuest:  [1002]
+<ce> Bom. O pródigo é um
+<ce> lâmina de noite chamada =monster_
+<ce> que se refugiou em %g3 laboratório,
+<ce> ___mondung_. Se não tiver
+<ce> devolvido em =1ºparton_ dias com _monster_'s
+<ce> sangue nas suas mãos, vamos assumir que falhou ou que
+<ce> join =monster_ e o seu
+<ce> a recompensa será confiscada a alguém que não falhará. I
+<ce> confiança que me fiz entender. Boa sorte e adeus.
+
+QuestFail:  [1003]
+Enquanto essa lâmina nocturna vive, não estou interessado em conversar sobre qualquer assunto, %pcf.
+
+QuestComplete:  [1004]
+<ce> Muito bom, %pcf.
+<ce> Muito bom, de facto. Aqui está o seu _reward_ gold
+<ce> peças. Estamos-lhe muito gratos.
+
+
+RumoresDuringQuest:  [1005]
+Ouvi dizer que há uma lâmina nocturna em ___mondung_, a vender feitiços por dinheiro.
+<--->
+Os castres ortográficos renegados são muito perigosos. Espero que eles recebam esse _monster_.
+
+RumoresPostfailure:  [1006]
+=monster_ supostamente seguiu em frente, ainda vendendo feitiços por dinheiro.
+<--->
+Ouvi dizer que a Escola de Julianos libertou os Cavaleiros Mentores atrás de alguém.
+
+RumoresPostsuccess:  [1007]
+Eles finalmente conseguiram aquele _monster_. Não se pode ter magos indisciplinados à solta.
+<--->
+Pena que eles apanhem aquele _monster_. Ouvi dizer que ele tinha muita terra suculenta.
+
+QuestorPostsuccess:  [1008]
+<ce> Você é %pcn. Bom trabalho com isso =monster_,
+<ce> lembras-te, a soletradora renegada?
+
+QuestorPostfailure:  [1009]
+<ce> Hmmph. Estragaste mesmo esse trabalho para matar
+<ce> a soletradora renegada =monster_, não foi?
+
+Mensagem:  1030
+%qdt:
+ A Escola de Julianos em ___questgador_
+ contratou-me para matar um pródigo
+ _monster_ do seu templo,
+ =monster_. Eu tenho =1ºparton_ dias para
+ chegar ao %g3 esconderijo, ___mondung_,
+ e de volta à Escola.
+
+Mensagem:  1031
+<ce> Você matou =monster_.
+<ce> A Escola ficará orgulhosa.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g3 occurs 2 times.
+--              %pcf occurs 10 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 2 times.
+--         =monster_ occurs 9 times.
+--       ___mondung_ occurs 3 times.
+--    ___questgiver_ occurs 1 time.
+--         _monster_ occurs 5 times.
+--          _reward_ occurs 2 times.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Place _mondung_ remote dungeon9
+
+Clock _1stparton_ 00:00 0 flag 17 range 0 2
+
+Foe _monster_ is Nightblade
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1030 step 0 
+	place foe _monster_ at _mondung_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _reward_ 
+	end quest 
+
+_mondead_ task:
+	killed 1 _monster_ saying 1031 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_1stparton_ task:
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_
+	say 1003 
+	clear _qgclicked_ _clearclick_ 

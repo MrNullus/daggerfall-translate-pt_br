@@ -1,0 +1,37 @@
+---- Example quest used to test place selection and arrival
+
+Quest: __DEMO05
+
+
+QRC:
+
+QuestLogEntry:  [1010]
+%qdt
+    Foi convocado para _TestBuilding_
+ em __TestBuilding_ em ____TestBuilding_.
+ Por favor, apressar, %pcn. Não há tempo a perder!
+
+Mensagem: 1050
+Chegou a _TestBuilding_ em __TestBuilding_.
+
+
+QBN:
+
+---- Definir um sítio alvo utilizando o recurso Local
+Local _TestBuilding_ remote house2
+
+
+---- Quest startup
+log 1010 step 0
+
+
+---- Esta tarefa desencadeia quando o jogador chega ao sítio alvo, basicamente: 'quando o PC em _lugar_ definir _alvo_'.
+_PlayerArrived_:
+pc em _TestBuilding_ set _ShowResultado_
+
+
+---- Esta tarefa é definida por _PlayerArrived_ 'pc at' conditional task
+_ShowResult_ task:
+digamos 1050
+remover o passo de registo 0
+busca final

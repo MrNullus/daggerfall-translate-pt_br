@@ -1,0 +1,166 @@
+-- Quest: C:\QUESTS\WORKING\70C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Sanguine
+-- Repute: 0
+-- QuestId: 0
+Mensagens: 21
+Missão: 70C00Y00
+DisplayName: Sanguine's Quest
+-- Painéis de mensagens
+QRC:
+
+QuestorOffer:  [1000]
+<ce> Poder é uma palavra tão bonita, não é? É
+<ce> pingos da língua como mel. Se o poder
+<ce> é o seu afrodisíaco, eu ficaria extasiado
+<ce> para lhe apresentar _artifacto_.
+<ce> tudo o que tem de fazer por mim em troca é
+<ce> punir um padre perfeitamente horrível que se atreveu
+<ce> para me desafiar. Soa bem para si?
+
+RecuseQuest:  [1001]
+<ce> Uma varíola em si, %pcn. Como
+<ce> ousa convocar-me e recusar o meu
+<ce> oferta generosa? Rezo para que eu vos perdoe,
+<ce> %pcf. Sangue é um
+<ce> inimigo nenhum deveria ter.
+
+AcceptQuest:  [1002]
+<ce> Não se vai arrepender disto, %pcf,
+<ce> desde que cumpra a sua parte do nosso
+<ce> acordo. Este monge sanctimonius é
+<ce> não é inofensivo; =monster_ é
+<ce> %g3 nome e %g queimou a minha adorável
+<ce> adoradores a batatas fritas. Ir para o
+<ce> templo abandonado onde %g se esconde,
+<ce> ___mondung_, e rip
+<ce> %g3 coração de %g3 peito. O meu
+<ce> agente, _contacto_ irá
+<ce> aguarda-o em ___contacto_.
+<ce> _contacto_ não gosta
+<ce> esperar para realizar o assassinato em
+<ce> =1ºparton_ dias ou menos. Eu tenho o
+<ce> sentimento delicioso ver-nos-emos uns aos outros
+<ce> novamente, %pcf. Espero que sim.
+
+QuestFail:  [1003]
+<ce> Que o reaccionário pietista ainda é
+<ce> vivo e você sabe disso, %pcf.
+<ce> não brinque com Sanguine, %pcf.
+<ce> Não vais gostar das regras.
+
+QuestComplete:  [1004]
+<ce> Encantado por conhecê-lo, %pcn.
+<ce> Estou _contacto_. Sanguine
+<ce> deve estar bastante extasiado consigo. Ele
+<ce> tinha _artifacto_ reservado para
+<ce> os seus discípulos preferidos. E agora é
+<ce> o seu. Espero que goste imensamente.
+
+RumoresDuringQuest:  [1005]
+Todas aquelas orgias que costumavam continuar têm sido erradicadas por =monster_.
+<--->
+Não há muito a fazer, uma vez que =monster_ coloca uma tocha para as orgias.
+
+RumoresPostfailure:  [1006]
+=monster_'s moveu-se -- %g's à procura de antros de decadência a norte.
+<--->
+Todos têm medo de fazer qualquer coisa divertida com pessoas como =monster_ por perto.
+
+RumoresPostsuccess:  [1007]
+Muita gente está feliz com = a morte de Monster_. Apenas sobremesas para %g3 ilk.
+<--->
+As orgias recomeçaram agora que =monster_ está fora de cena.
+
+Mensagem:  1011
+Sanguine é o Príncipe da Luxúria da Daedra. Qualquer coisa em excesso é o seu lema.
+<--->
+O Príncipe da Perversidade e das Relações Sexuais Não-Naturais da Daedra, é claro.
+
+Mensagem:  1012
+Apenas um leering =contacto_ %di daqui em __contacto_.
+<--->
+_contacto_ é o nome de um malandro =contacto_ em __contacto_.
+
+Mensagem:  1014
+<ce>O Sanguine Rose convoca uma dédra para lutar por si.  Uma proposta arriscada
+<ce> na melhor das hipóteses.
+<--->
+<ce>O possuidor da Rosa Sanguine deve ter o poder de convocar
+<ce> ajuda do avião de Oblivion.
+
+Mensagem:  1015
+<ce> =monster_ está morto.
+<ce> Sanguine será extasiante,
+<ce> espera-se.
+
+Mensagem:  1020
+%qdt:
+ Sanguine quer que eu assassine um
+ monge chamado =monster_ em troca de
+ artefacto_. O monge
+ está em ___mondung_ e deve estar morto em
+ =1ºparton_ dias ou menos, e eu devo ser
+ em ___contacto_ em
+ =1ªpartida_ dias para se encontrar com _contacto_
+ num lugar chamado __contacto_.
+
+
+-- Symbols used in the QRC file:
+--
+--               %di occurs 1 time.
+--                %g occurs 4 times.
+--               %g3 occurs 4 times.
+--              %pcf occurs 5 times.
+--              %pcn occurs 2 times.
+--              %pct occurs 5 times.
+--              %qdt occurs 1 time.
+--       =1stparton_ occurs 3 times.
+--         =contact_ occurs 2 times.
+--         =monster_ occurs 9 times.
+--       ___contact_ occurs 2 times.
+--       ___mondung_ occurs 2 times.
+--        __contact_ occurs 5 times.
+--        _artifact_ occurs 3 times.
+--         _contact_ occurs 5 times.
+
+QBN:
+Item _artifact_ artifact Sanguine_Rose anyInfo 1014
+
+Person _questgiver_ face 112 named Sanguine anyInfo 1011
+Person _contact_ face 232 faction The_Cabal remote anyInfo 1012
+
+Place _mondung_ remote dungeon4
+
+Clock _1stparton_ 00:00 0 flag 1 range 2 5
+
+Foe _monster_ is Monk
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	place foe _monster_ at _mondung_ 
+	create npc _contact_ 
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1015 
+
+_qgclicked_ task:
+	clicked npc _contact_ 
+
+_1stparton_ task:
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_ and not _mondead_ 
+	say 1003
+	clear _qgclicked_ 

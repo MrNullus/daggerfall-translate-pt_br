@@ -1,0 +1,163 @@
+---- Example quest based on M0B00Y16 (kill a giant, rescue NPC)
+---- Have modified as only testing specific parts of this quest
+
+Quest: __DEMO08
+
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce> Howdy, %pcf.  Se tiveres alguns dias livres,
+<ce> um trabalho que acabou de chegar para algum gigantesco assassino, e
+<ce> Pensei em si.  Interessado?
+
+RecuseQuest:  [1001]
+<ce> Demasiado ocupado, eh?  Quando eu tinha a tua idade,
+<ce> Nunca estive demasiado ocupado para sair de um gigante
+<ce> ou dois.  As crianças de hoje em dia, digo-vos.
+
+AcceptQuest:  [1002]
+<ce> Certo.  Parece que há este gigante, movido
+<ce> em ___mondung_ um tempo atrás e
+<ce> tem estado a ter um bom tempo a festejar
+<ce> nas ovelhas do _dummy_ na área.  Ate
+<ce> alguns dos aldeões locais também, suponho eu,
+<ce> mas os velhos _dummy_ não parecem tão preocupados
+<ce> sobre isso.  Em todo o caso, %g quer este gigante
+<ce> tratado dentro de =qtime_ dias, e %g's payin'
+<ce> _ ouro_ dourado para ele.  Vejo-te daqui a pouco.
+
+QuestFail:  [1003]
+<ce> O quê, o gigante morreu de comer em excesso?
+<ce> Põe-te a andar, %pcf.  Tem um trabalho a fazer.
+
+QuestComplete:  [1004]
+<ce> Salve o gigante-assassassino!  Eu conhecia-vos
+<ce> era o mais indicado para o trabalho.
+<ce> aqui está o _ouro_ dourado.
+
+RumoresDuringQuest:  [1005]
+<ce> Um gigante em ___mondung_ está a aterrorizar os habitantes locais, mas _dummy_ não
+<ce> parecem importar-se.
+                                     <--->
+<ce> Aquele gigante em ___mondung_ transportou outro aldeão no outro dia.
+
+RumoresPostfailure:  [1006]
+<ce> Estou contente por aquele gigante ter finalmente saído de ___mondung_.  Acho que conseguiu
+<ce> aborrecido com a sua dieta suave de aldeão noite após noite.
+
+RumoresPós-sucesso:  [1007]
+<ce> Obrigado %god _dummy_ finalmente enviou alguém para matar aquele gigante
+<em ___mondung_.  Deve ter matado uma das %g de ovelhas preciosas.
+
+QuestorPostsuccess:  [1008]
+<ce> É o meu velho amigo Giant-Killer %pcf!
+
+QuestorPostfailure:  [1009]
+<ce> No meu tempo, podia ser expulso de
+<ce> o Grémio dos Combatentes se não conseguisses matar
+<ce> um simples gigante.  Os tempos mudam, acho eu.
+
+Mensagem:  1020
+%qdt:
+ _questgiver_ do Grémio dos Combatentes
+ de ___questgiver_ me contratou para
+ matar um gigante em ___mondung_.
+ Devo informar dentro de =qtime_ dias
+ pela minha recompensa de _ouro_ ouro.
+
+Mensagem:  1021
+%qdt:
+ Eu salvei um comerciante que o gigante era
+ aparentemente a poupar para um lanche.
+ _villager_ pediu-me para tomar %g2
+ para _loja_ na __loja_.
+
+Mensagem:  1030
+<ce> O gigante ruge de dor.  Ouve-se
+<ce> o som de passos pesados a chegar
+<ce> para si.  Talvez o gigante
+<ce> convidou alguns amigos para jantar...
+
+Mensagem:  1040
+<ce> Obrigado %god que estás aqui!  Eu estava
+<ce> a caminho do meu mercado ontem
+<ce> quando o gigante me transportou
+<ce> com outros quatro comerciantes que eu era
+<ce> viajar com.  Já os comeu,
+<ce> Acho que me estava a poupar para mais tarde.
+<ce> Ajuda-me a sair disto, por favor
+<ce> lugar?  Eu nunca conseguirei sair sozinho.
+
+Mensagem:  1041
+<ce> És um verdadeiro herói.  Permita-me que me apresente:
+<ce> _villager_ de ___villager_.
+<ce> I was on my way to _store_ in
+<ce> __store_.  Se me pudesse deixar cair
+<ce> lá fora, eu ficaria para sempre em dívida para consigo.
+
+Mensagem:  1042
+<ce> Agradeço a vossa ajuda, mas penso
+<ce> Posso encontrar o meu próprio caminho a partir daqui.
+
+Mensagem:  1043
+<ce> És verdadeiramente sem coração.
+
+Mensagem:  1044
+<ce> Gostei da vossa companhia, %pcf.
+<ce> Salvaste-me a vida, e eu não me esquecerei dela.
+
+Mensagem:  1080
+<ce> Hey, aqui está um mapa para ___newdung_
+<ce> uma das outras pessoas encontrou o
+<ce> outro dia.  Se eu tivesse uns dois anos
+<ce> mais novo, podemos rasgá-lo
+<ce> juntos, tal como nos velhos tempos.
+
+
+QBN:
+Item _gold_ gold
+
+Person _villager_ face 8 group Shopkeeper
+
+Place _mondung_ permanent PirateerHold1
+Place _store_ remote generalstore
+
+Foe _giant_ is Giant
+Foe _F.01_ is Giant
+
+--	Quest start-up:
+	log 1020 step 0 
+	start task _victim_
+	place foe _giant_ at _mondung_ 
+
+_victim_ task:
+	place npc _villager_ at _mondung_ 
+
+_S.09_ task:
+	hide npc _villager_ 
+
+_S.10_ task:
+	clicked npc _villager_ 
+	prompt 1040 yes yes no _no_ 
+
+yes task:
+	pc at _store_ set _S.13_ 
+	log 1021 step 1 
+	hide npc _villager_ 
+	say 1041 
+	add _villager_ face
+
+_no_ task:
+	say 1043 
+	-change repute with _villager_ by -10 
+
+_S.13_ task:
+	say 1044 
+	drop _villager_ face 
+	-change repute with _villager_ by +15 
+	place npc _villager_ at _store_ 
+
+_S.14_ task:
+	when yes and not _S.13_
+

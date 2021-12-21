@@ -1,0 +1,397 @@
+-- Quest: C:\QUESTS\WORKING\_TUTOR__.Qbn.
+-- StartsBy: letter
+-- Questee: anyone
+-- Repute: 0
+-- QuestId: 0
+Messages: 57
+Quest: _TUTOR__
+-- Message panels
+QRC:
+
+RumoresDuringQuest:  [1005]
+<ce> Vou dar-lhe uma dica %ra.
+<ce> Se quiser ter sucesso na magia,
+<ce> juntar-se à guilda dos magos.
+                                     <--->
+<ce> Uma pequena dica para si. Ponha o seu dinheiro
+<ce> no banco de %reg. Peça-lhes que dêem
+<ce> as suas cartas de crédito. Elas dificilmente
+<ce> pesar uma coisa.
+                                     <--->
+<ce> As lojas de especialidades são o melhor lugar
+<ce> para encontrar artigos pouco sensuais.
+                                     <--->
+<ce> Acabaram de aprovar uma lei de vagabundagem.
+<ce> Não se pode dormir na rua. O
+<ce> guardas até patrulham fora das paredes.
+<ce> Tem de se arranjar um quarto numa estalagem.
+                                     <--->
+<ce> Todos devem juntar-se a um templo. O
+<ce> a única questão é qual deus é melhor
+<ce> para si? Eu verificaria todos eles.
+
+RumoresPostfailure:  [1006]
+<ce> As coisas estão realmente a aquecer em
+<ce> a cidade de Daggerfall. Deve-se
+<ce> vá lá se quiser aventura.
+                                     <--->
+<ce> Ouvi dizer que a realeza de
+<ce> Wayrest está a agitar as coisas. O seu
+<ce> uma grande oportunidade para qualquer pessoa
+<ce> com a coragem de realmente perguntar ao
+<ce> rei ou rainha para o trabalho.
+                                     <--->
+<ce> Ouvi dizer que Sentinel é um
+<ce> bom lugar para ganhar ouro rápido e
+<ce> a oportunidade de um pouco de
+<ce> aventura. A família real é
+<ce> contratação de heróis para trabalhos perigosos.
+
+QuestLogEntry:  [1010]
+<ce> Os Pergaminhos dos Anciãos: Daggerfall tem um tutorial
+<ce> que pode estar activo durante o jogo. É executado
+<ce> ao longo desta primeira masmorra e por um curto espaço de tempo
+<ce> tempo depois. Quer usar isto
+<ce> tutorial?
+
+Mensagem:  1012
+<ce> Tutorial Lição 1
+<ce>                                    
+<ce> A primeira coisa que quer fazer é experimentar
+<ce> com a movimentação da sua personagem. Não se preocupe
+<ce> sobre monstros, não há nenhum nesta primeira sala.
+<ce>                                    
+<ce> Quando este texto limpar, mova o rato
+<ce> para mudar para onde se procura.
+<ce>
+<ce> Use as teclas W, A, S e D para dar a volta.
+<ce> Dica: Essas são as chaves por defeito. Pode alterá-las mais tarde
+<ce> usando a tecla ESC e depois o botão CONTROLES.
+<ce>                                    
+<ce> Voltarei dentro de cerca de um minuto para vos falar sobre
+<ce> armar-se e combater monstros.
+
+Mensagem:  1013
+<ce> Tutorial Lição 2
+<ce>                                    
+<ce> Antes de enfrentar as profundezas do Porão do Privateer,
+<ce> vai querer armar-se. Prima a tecla F6
+<ce> para trazer a sua janela de inventário.
+<ce>                                    
+<ce> Clicando na arma coloca-a na sua mão. Agora
+<ce> é capaz de sacar a sua arma. Clique na SAÍDA
+<ce> botão para voltar ao jogo.
+<ce>                                    
+<ce> Dica: Pode ter duas armas equipadas. Prima a tecla H
+<ce> chave para alternar entre eles.
+<ce>                                    
+<ce> Clique em SIM para continuar, NÃO para cancelar o tutorial.
+
+Mensagem:  1015
+<ce> Tutorial Lição 3
+<ce>                                    
+<ce> Para sacar a sua arma, basta premir a tecla Z. Há
+<ce> um pequeno atraso após equipar uma arma, por isso não entre em pânico
+<ce> se não desenhar instantaneamente.
+<ce>                                    
+<ce> Faça algumas oscilações práticas segurando a direita
+<ce> botão do rato e movendo o rato de um lado para o outro. É assim que
+<ce> luta contra os monstros.
+<ce>                                    
+<ce> Dica: mover o seu rato em diferentes direcções faz
+<ce> a espada balança de forma diferente. Cada tipo de baloiço afecta
+<ce> as suas hipóteses de atingir o monstro e quanto dano faz.
+<ce>                                    
+<ce> Dou-lhe um minuto para praticar o balançar da espada.
+<ce>                                    
+<ce> Clique em SIM para continuar, NÃO para cancelar o tutorial.
+
+
+Mensagem:  1020
+<ce> Tutorial Lição 4
+<ce>                                    
+<ce> Ao fundo do corredor e através da porta está um rato gigante.
+<ce> Vamos matá-lo!
+<ce>
+<ce> Quando chegar à porta, basta colocá-la na
+<ce> centro do ecrã e premir o botão do rato
+<ce> para a abrir. É assim que se activam as coisas, tais como
+<ce> portas, alavancas, rodas, pilhas de tesouros, até mesmo pessoas.
+<ce> Por vezes é possível tirar o tesouro de cadáveres
+<ce> clicando neles, tal como nas pilhas do tesouro.
+<ce>                                    
+<ce> Dica: Esta porta é uma porta secreta. Depois de se matar a
+<ce> ratazana, volte para ela e clique nela. A porta fechar-se-á.
+<ce> Nem todas as portas secretas são assim tão fáceis de ver.
+<ce>                                    
+<ce> Voltarei dentro de alguns minutos para a próxima lição.
+<ce> Clique em SIM para continuar, NÃO para cancelar o tutorial.
+
+Mensagem:  1025
+<ce> Tutorial Lição 5
+<ce>                                    
+<ce> Há uma pilha de tesouro no altar negro no
+<ce> espaço com o rato. Aproxime-se e clique sobre ele.
+<ce> Isto coloca-o automaticamente no seu inventário. Todos
+<ce> as coisas na pilha do tesouro estão na mão direita
+<ce> coluna do seu inventário.
+<ce> coluna do seu inventário.                                    
+<ce> Tem dois modos à escolha, EQUIPAR e REMOVER.
+<ce> Clique num deles. Agora, quando clica num item em
+<ce> a coluna da direita, vai para o seu inventário (REMOVE
+<ce> modo) ou directamente na sua personagem (modo EQUIP).
+<ce>                                    
+<ce> Dica: Pode obter informações sobre os seus artigos por
+<ce> usando o modo INFO e depois clicando no item.
+<ce>                                    
+<ce> Volto dentro de um minuto para uma aula de jogo de salvamento.
+<ce> Clique em SIM para continuar, NÃO para cancelar o tutorial.
+
+Mensagem:  1030
+<ce> Tutorial Lição 6
+<ce>                                    
+<ce> Este seria um bom momento para salvar o jogo (assumindo
+<ce> não se está no meio de uma luta). Prima o ESC
+<ce> tecla e clique em SAVE GAME.
+<ce>                                    
+<ce> Se for morto nesta masmorra, pode voltar para
+<ce> que salvou o jogo sem ter de criar uma nova personagem.
+<ce>                                    
+<ce> Dica: Também se pode usar F9 para a navegação rápida e
+<ce> F12 para carregar rapidamente.
+<ce>                                    
+<ce> Vou deixá-lo por vários minutos agora. Vá em frente e
+<ce> explorar o calabouço. Clique SIM para continuar, NÃO para
+<ce> cancelar o tutorial.
+
+Mensagem:  1035
+<ce> Tutorial Lição 7
+<ce>                                    
+<ce> Se tiver um carácter de fundição ortográfica, tente usar um
+<ce> feitiço contra o próximo monstro.
+<ce>                                    
+<ce> Prima a tecla BACKSPACE para puxar para cima o menu de feitiços.
+<ce> seleccionar SHOCK clicando duas vezes sobre ele. Este feitiço irá
+<ce> só funciona se estiver suficientemente perto para tocar no monstro
+<ce> Para lançar o feitiço, prima o botão esquerdo do rato;
+<ce> os feitiços são sempre disparados no centro do ecrã.
+<ce>                                    
+<ce> Esperarei até que tenha escapado da masmorra
+<ce> para a sua próxima lição tutorial.
+
+Mensagem:  1040
+<ce> Tutorial Lição 8
+<ce>                                    
+<ce> Parabéns! Conseguiu sair do arranque
+<ce> masmorra, Privateer's Hold.
+<ce> aposto que estás a pensar o que fazer agora? O que precisa
+<ce> é uma cidade. As cidades têm os serviços de que necessitará
+<ce> durante todo o jogo. Vamos viajar rapidamente para um.
+<ce>                                    
+<ce> (continuação...)
+
+Mensagem:  1041
+<ce> A viagem rápida é feita premindo a tecla V. A região
+<ce> em que está (Daggerfall) é destacado a vermelho.
+<ce> clique sobre essa região e obtém um mapa de explosão. Aí
+<ce> são muitos lugares neste mapa! Vamos encontrar a cidade de
+<ce> Daggerfall. Clique em FIND e escreva em DAGGERFALL.
+<ce> A forma mais conveniente de viajar é clicando
+<ce> CAUTIOUSLY e INNS, ambos os quais são o padrão
+<ce> configurações. Caso contrário, arrisca-se a chegar à noite e
+<ce> ter de subir as muralhas para chegar à cidade.
+<ce>                                    
+<ce> Para que este tutorial continue, deverá ir a um
+<ce> grande cidade, tal como a cidade de Daggerfall. Nós
+<ce> retomar as lições em =2dagger_ days. Isto
+<ce> deve dar-lhe muito tempo para lá chegar.
+
+QuestTimeLapse:  [1045]
+<ce> Aula Tutorial 9
+<ce>                                    
+<ce> Ah, as vistas e os sons da cidade! Chegou
+<ce> durante a noite ou tentar descansar? Em caso afirmativo, os guardas não deixarão
+<ce> qualquer pessoa dorme nas ruas ou mesmo demasiado perto do
+<ce> paredes. Só pode descansar em Taverns, se tiver
+<ce> comprou ali um quarto.
+<ce>                                    
+<ce> A primeira coisa que quer fazer é premir a tecla F4 para
+<ce> defina o seu modo para DIÁLOGO (pode alterar o modo de
+<ce> interacção em qualquer altura usando F1 a F4). Agora aproxima-te de um
+<ce> dos habitantes da cidade. Eles não vão parar para falar consigo, a menos que
+<ce> não se está a mexer. Clique sobre a pessoa e irá
+<ce> ser colocado no ecrã do Diálogo.
+<ce>                                    
+<ce> (continuação...)
+
+Mensagem:  1046
+<ce> Quer encontrar uma loja geral ou um armeiro. É
+<ce> um dos locais onde pode vender o seu equipamento em excesso. O
+<ce> pessoa irá provavelmente dar-lhe indicações. Viajar em
+<ce> essa direcção durante algum tempo e depois pedir a outro transeunte.
+<ce> Continue isto até que alguém marque a localização no seu mapa.
+<ce>                                    
+<ce> Prima M para ver o mapa da cidade. Deverá ser capaz de
+<ce> para dizer de onde é o edifício. Todas as lojas têm
+<ce> sinais para a frente. Aprenda os sinais e será capaz de
+<ce> deslocar-se muito mais facilmente. Vai precisar de uma taverna para descansar.
+<ce> procurar o sinal da caneca de cerveja.
+<ce>                                    
+<ce> Dica: Pressionando F3 muda para o modo INFO. Pode clicar em
+<ce> nos edifícios para aprender o que são. Algumas lojas não abrem
+<ce> até altas horas do dia. Pode ficar à espera (uma opção REST) até
+<ce> o lojista decide destrancar a porta.
+<ce>                                    
+<ce> Não saia da cidade! Voltarei a contactar-vos amanhã.
+
+Mensagem:  1050
+<ce> Aula Tutorial 10
+<ce>                                    
+<ce> A lição de hoje é sobre guildas. Uma guilda é uma organização
+<ce> que oferece benefícios para os seus membros. À medida que se eleva na classificação
+<ce> numa guilda, obtém-se mais benefícios. Para subir na classificação, você
+<ce> deve melhorar as competências de que o grémio se preocupa, e executar
+<ce> missões regulares para melhorar a sua reputação com
+<ce> eles. Pode pertencer a mais do que uma guilda.
+<ce>                                    
+<ce> Todos os ortopedistas devem juntar-se ao Grémio dos Mages. Todos
+<ce> deve escolher um templo para aderir. No entanto, escolher cuidadosamente.
+<ce> só se pode ser membro de um templo. Tipo de lutador
+<ce> os caracteres devem juntar-se ou à guilda do lutador ou a
+<ce> ordem cavalheiresca.
+<ce>                                    
+<ce> Dica: Ladrões e assassinos, façam o que têm a fazer. O
+<ce> o submundo entrará em contacto consigo após algum tempo.
+<ce>                                    
+<ce> Estarei de volta amanhã com a próxima lição.
+
+Mensagem:  1055
+<ce> Tutorial Lição 11
+<ce>                                    
+<ce> Hoje queremos uma busca. Uma missão é uma aventura dada por
+<ce> alguém na cidade. É espantoso o número de pessoas em Daggerfall
+<ce> necessita dos serviços de um herói ou heroína corajosa.
+<ce>                                    
+<ce> Ir a alguém numa taverna ou na rua. Pergunte-lhes sobre
+<ce> trabalho. As probabilidades são que o direccionem para outra pessoa
+<ce> na cidade. Essa pessoa irá oferecer-lhe uma busca. Não tem
+<ce> para aceitar todas as missões que são oferecidas. Concluir com sucesso
+<ce> uma demanda significa que essa pessoa, e os seus amigos, vão gostar de si
+<ce> um pouco melhor. Também pode ser rentável. Por último, mas não
+<ce> pelo menos, é a melhor maneira de localizar as masmorras!
+
+Mensagem:  1056
+<ce> Esta é a última das lições tutoriais. Há muito
+<ce> mais para aprender sobre Tamriel e sobre o jogo. No entanto,
+<ce> tem agora o básico para ser capaz de explorar e aprender
+<ce> estas coisas por sua conta.
+<ce>                                    
+<ce> Boa sorte, e diverte-te!
+
+
+-- Symbols used in the QRC file:
+--
+--               %ra occurs 1 time.
+--              %reg occurs 1 time.
+--         =2dagger_ occurs 1 time.
+
+QBN:
+
+
+Place pirateerHold permanent PirateerHold2
+Place cityOfDaggerfall permanent DaggerfallCity1
+
+-- "range 0 1" removed from all timers so no days get added
+Clock _S.03_ 00:06 0 flag 1
+Clock _S.04_ 00:08 0 flag 1
+Clock _S.05_ 00:24 0 flag 1
+Clock _S.06_ 00:12 0 flag 1
+Clock _S.07_ 00:06 0 flag 1
+Clock _S.08_ 00:08 0 flag 1
+Clock _S.10_ 14.00:00 0 flag 1
+Clock _day1_ 1.00:00 0 flag 1
+Clock _day2_ 1.00:00 0 flag 1
+Clock _2dagger_ 13.22:40 0 flag 1
+
+
+--	Quest start-up:
+	prompt 1010 yes yes no _no_ 
+
+variable _exitstarter_
+yes task:
+	pc at pirateerHold set _exitstarter_ 
+	start timer _S.03_ 
+	say 1012 
+
+_no_ task:
+	start quest 977 977 
+	end quest 
+
+_S.03_ task:
+	prompt 1013 yes _yes1_ no _no_ 
+
+_S.04_ task:
+	prompt 1015 yes _yes2_ no _no_ 
+
+_S.05_ task:
+	prompt 1025 yes _yes4_ no _no_ 
+
+_S.06_ task:
+	prompt 1020 yes _yes3_ no _no_ 
+
+_S.07_ task:
+	prompt 1030 yes _ring_ no _no_ 
+
+_S.08_ task:
+	prompt 1035 yes _S.09_ no _no_ 
+
+variable _S.09_
+variable _S.10_
+variable _used_
+_day1_ task:
+	prompt 1050 yes _poet_ no _no_ 
+
+_day2_ task:
+	start quest 977 977 
+	say 1055 
+	say 1056 
+	end quest 
+
+_2dagger_ task:
+	start quest 977 977 
+	end quest 
+
+_S.15_ task:
+	pc at cityOfDaggerfall set _S.25_ 
+	when yes and not _exitstarter_ 
+	prompt 1041 yes _yes6_ no _no_ 
+	say 1040 
+
+_yes1_ task:
+	start timer _S.04_ 
+
+_yes2_ task:
+	start timer _S.06_ 
+
+_yes3_ task:
+	start timer _S.05_ 
+
+_yes4_ task:
+	start timer _S.07_ 
+
+_ring_ task:
+	start timer _S.08_ 
+
+_yes6_ task:
+	start timer _2dagger_ 
+
+_note_ task:
+	start timer _day1_ 
+
+_poet_ task:
+	start timer _day2_ 
+
+variable _scum_
+_S.25_ task:
+	prompt 1046 yes _note_ no _no_ 
+	say 1045 

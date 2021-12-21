@@ -1,0 +1,209 @@
+1.	Após o Colégio da Destruição, que escola de 
+	estudou a segunda magia mais longa?
+a.	Restauração
+	#4250
+	22 +12
+	23 +6
+b.	Ilusão
+	#4251
+	22 +12
+	24 +6
+c.	Alteração
+	#4252
+	22 +12
+	25 +6
+d.	Thaumaturgy
+	#4253
+	22 +12
+	26 +6
+e.	Misticismo
+	#4254
+	22 +12
+	27 +6
+
+2.	O que o motiva para uma vida de
+	aventura?
+a.	Riqueza
+	#4255
+	GP +500
+b.	Fama
+	#4256
+	r4 +10
+	r2 +10
+c.	Conhecimento
+	#4257
+	IT 7 0 0
+d.	Diversão
+	#4258
+	1 +3
+	2 +3
+e.	Ajudar os outros
+	#4259
+	r0 +10
+
+3.	No intervalo do estudo formal, gastou o seu
+	tempo ___.
+a. 	socializando com aristocratas
+	#4260
+	1 +6
+	r3 +5
+	r0 -5
+b. 	aprendendo os espertalhões de rua
+	#4261
+	2 +6
+	r0 +2
+	r4 +3
+	r3 -5
+c. 	prática de acrobacia
+	#4262
+	3 +2
+	20 +2
+	18 +2
+d. 	aprendizagem de economia
+	#4263
+	14 +6
+e. 	natação
+	#4265
+	17 +6
+f. 	sparring
+	#4266
+	30 +6
+
+4.	Desde a infância, tem salvo ___.
+a.	100 peças de ouro
+	#4167
+	GP +100
+b.	Um livro favorito
+	#4168
+	IT 7 0 0
+c.	Uma cuirass
+	#4169
+	IT 2 0 0
+d.	Uma katana
+	#4193
+	IT 3 8 0
+
+5.	Em agradecimento pelos serviços prestados, a
+	O Imperador deu-lhe ___.
+a.	Mais de 200 peças de ouro
+	#4172
+	GP +250
+b.	Uma adaga de ébano
+	#4173
+	IT 3 0 7
+c.	Um livro
+	#4174
+	IT 7 0 0
+d.	Um rubi
+	#4175
+	IT 14 0 0
+e.	Um bastão prateado
+	#4176
+	IT 3 2 2
+f.	Uma pérola
+	#4191
+	IT 22 1 0
+
+6.	À medida que foi envelhecendo, recebeu mais
+	treino mágico em ___.
+a.	A Escola da Destruição
+	22 +6
+b.	A Escola de Restauração
+	23 +6
+c.	A Escola da Ilusão
+	24 +6
+d.	A Escola de Alteraçao
+	25 +6
+e.	A Escola de Thaumaturgy
+	26 +6
+f.	A Escola de Misticismo
+	27 +6
+
+7.	Quando criança, o seu apelido era ___.
+a.	Coelho
+	3 +6
+b.	Guppy
+	17 +6
+c.	Quicksilver
+	21 +6
+d.	Raspador
+	30 +6
+e.	Macaco
+	18 +6
+
+8.	É mais amigável do que a maioria com ___.
+a. 	as Harpias Selvagens
+	5 +6
+b. 	os simples Giants
+	6 +6
+c. 	os gloriosos Dragões
+	7 +6
+d. 	as ninfas mais imodesto
+	8 +6
+e. 	a infernal Daedra
+	9 +6
+f. 	os Spriggans bucólicos
+	10 +6
+g. 	os Centauros primitivos
+	11 +6
+h. 	os Imps. mischevious
+	12 +6
+
+9.	De todos os tipos desagradáveis, tem o
+	mais ódio pessoal por ___.
+a.	Sacerdotes hipócritas
+	AE M 8 12 +3
+b.	Feiticeiros diabólicos
+	AE M 8 2 +4
+c.	Camponeses estúpidos
+	AE M 8 8 +3
+d.	Barões ladrões de poder
+	AE M 8 17 +4
+e.	Assassinos imorais
+	AE M 8 11 +2
+
+10.	É amigo íntimo de ___.
+a. um Monge
+	AF O 8 12 +1
+b. a Mage
+	AF O 8 2 +1
+c. uma Rogue
+	AF O 8 8 +1
+d. um Guerreiro
+	AF O 8 17 +1
+e. um Assassino
+	AF O 8 11 +1
+
+11.	Que deus, se é que existe, venera?
+a.	Nenhum
+	r2 +5
+b.	Arkay, Deus do Nascimento e da Morte
+	rf82 +5
+c.	Zenithar, Deus do Comércio
+	rf84 +5
+d.	Mara, a Deusa Mãe
+	rf88 +5
+e.	Dibella, Deusa da Beleza
+	rf98 +5
+f.	Julianos, Deus da Lógica
+	rf94 +5
+g.	Akatosh, Deus do Tempo
+	rf92 +5
+h.	Stendarr, Deus da Misericórdia
+	rf106 +5
+i.	Kynareth, Deusa do Ar
+	rf36 +5
+
+12.	Tem o maior problema ___.
+a.	Resistência aos venenos
+	RP -10
+b.	Ficar acordado e alerta
+	FT -5
+c.	O convívio com os outros
+	RR -5
+d.	Evitar doenças
+	RD -5
+e.	Resistir à magia
+	MR -5
+f.	Lutar sem magia
+	TH -5

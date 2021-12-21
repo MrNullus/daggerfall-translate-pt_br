@@ -1,0 +1,184 @@
+-- Quest: C:\QUESTS\WORKING\60C00Y00.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: Sheogorath
+-- Repute: 0
+-- QuestId: 0
+-- Edited for Daggerfall Unity by Jay_H
+Mensagens: 31
+Missão: 60C00Y00
+DisplayName: Sheogorath's Quest
+-- Painéis de mensagens
+QRC:
+
+QuestorOffer:  [1000]
+<ce> Oh, meu. Aposto que não estais à minha espera!
+<ce> Os meus irmãos e não irmãos são por vezes
+<ce> um pouco lento, por isso, intervim por eles. Demasiado
+<ce> mau para ti. Terás apenas de cortar
+<ce> o teu acordo comigo. Seja rápido!
+<ce> antes que a hora do pálido seja passada,
+<ce> tenho muito que fazer noutro lugar. Então!
+<ce> Potência que a %ra anseia para esfregar
+<ce> o corpo e aliviar os quatrocentos
+<ce> feridas da vida mortal? Sim, Sheogorath
+<ce> tem poder, poder suficiente para puxar o
+<ce> ramos através dos olhos da lua
+<ce> e sangue de chuva sobre Tamriel. Para isto
+<ce> poder, enviarás a alguém um
+<ce> convite para um chá para mim?
+
+RecuseQuest:  [1001]
+<ce> La, rejeitada por uma %ra esquálida
+<ce> com piolhos no seu cabelo. Até que ponto tem
+<ce> Sheogorath ressuscitou! Terei de
+<ce> pedir um aumento na minha mesada.
+<ce> Tirrah, %pct.
+
+AcceptQuest:  [1002]
+<ce> Para o chá, para uma festa de chá comigo! Vai, vai
+<ce> a um lugar chamado ___mondung_,
+<ce> onde o objecto dos meus desejos galhosos
+<ce> tropeçar e posar e usar blackberry
+<ce> coroas. Espera ... não convides isto
+<ce> battlemage to tea with me. Agora eu
+<ce> lembrar. Isto =monster_
+<ce> o nome é. Matar %g2 até à morte,
+<ce> assassinato %g2 fatalmente, é o que eu desejo.
+<ce> depois passar de ___mondung_ para um
+<ce> asilo de lunáticos chamado ___contacto_
+<ce> e ver o meu =qgfriend_,
+<ce> _qgfriend_. _artifacto_ para
+<ce> você %g terá. Esperará por si por
+<ce> =1stparton_ days e depois irá para
+<ce> casar com o herdeiro desconhecido de Rowanda. Agora eu
+<ce> lance-lhe um yapow e gazeenza.
+
+QuestFail:  [1003]
+<ce> Desculpe-me, não sabe isto,
+<ce> mas eu estou completamente louco. E se você
+<ce> não se afaste, eu vomitarei em cima de si.
+
+QuestComplete:  [1004]
+<ce> Ah, que simpático da sua parte em deixar-me sair do meu
+<ce> cela, madame carcereiro. Sheogorath mudou
+<ce> a sua mente e decidiu que queria
+<ce> tomar =monster_ ao chá
+<ce> afinal de contas. Mas quando ele descobriu, %g
+<ce> estava morto, ele decidiu que era o melhor.
+<ce> dessa forma =monster_
+<ce> não comeria todas as tartes postiças. Antes de
+<ce> Esqueci-me, aqui está _artifacto_. Não o faças
+<ce> aponte-o para mim.
+
+RumoresDuringQuest:  [1005]
+Uma loucura de batalha está a aterrorizar o campo em torno de ___mondung_.
+
+RumoresPostfailure:  [1006]
+<ce>___mondung_ está quieto agora que =monster_ se mudou, mas %g'll estar de volta,
+<ce> Aposto.
+
+RumoresPostsuccess:  [1007]
+Boa cavalgada na batalha =monster_ em ___mondung_. Ouvi dizer que %g era louco como um mago.
+<--->
+Então, alguém finalmente matou aquela louca batalha em ___mondung_. Obrigado %god.
+
+Mensagem:  1011
+_qgfriend_ é aquele louco, baboso =qgfriend_ que vive em ___contactdung_.
+<--->
+<ce> _qgfriend_ is that crazy =qgfriend_ that came to town a while back.
+ Dizem que %g vive realmente em ___contactdung_.
+
+Mensagem:  1012
+Sheogorath é o Príncipe da Insanidade da Daedra. Não é um bom com quem contar.
+<--->
+Sheogorath é o Louco, a Daedra que se diverte no caos e na loucura.
+
+Mensagem:  1013
+O artefacto_ é um artefacto antigo com efeitos mágicos extremamente aleatórios.
+<--->
+_artifacto_ pode transformar os seus alvos em outras criaturas.
+
+Mensagem:  1014
+O _qgfriend_ é um dos mais leais servidores do Príncipe Sheogorath da Daedra.
+<--->
+_qgfriend_ é o nome do =qgfriend_ que é um escravo de Sheogorath.
+
+Mensagem:  1020
+%qdt:
+ O Príncipe Sheogorath daedra tem
+ prometeu-me um artefacto chamado _artifacto_
+ em troca da morte de um golpe de misericórdia
+ named =monster_. Se esta batalha se desenrolar,
+ que reside num lugar chamado ___mondung_,
+ está morto e encontro o contacto do Sheogorath em
+ Contacto_, _qgfriend_
+ dar-me-á _artifacto_. Mas eu tenho de
+ ter tudo isto realizado em =1ºparton_ dias.
+
+Mensagem:  1030
+<ce> Você despachou =monster_
+<ce> a partir deste plano mortal.  Agora para
+<ce> ver se o Sheogorath ainda se lembra
+<ce> o seu acordo.
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 7 times.
+--               %g2 occurs 2 times.
+--              %god occurs 7 times.
+--              %pct occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--       =1stparton_ occurs 4 times.
+--         =monster_ occurs 9 times.
+--        =qgfriend_ occurs 5 times.
+--   ___contactdung_ occurs 4 times.
+--       ___mondung_ occurs 13 times.
+--        _artifact_ occurs 8 times.
+--        _qgfriend_ occurs 6 times.
+
+QBN:
+Item _artifact_ artifact Wabbajack anyInfo 1013
+
+Person _questgiver_ face 112 named Sheogorath anyInfo 1012
+Person _qgfriend_ face 1 group Innkeeper remote anyInfo 1011 rumors 1014
+
+Place _mondung_ remote dungeon
+Place _contactdung_ remote dungeon3
+
+Clock _1stparton_ 00:00 0 flag 1 range 2 5
+
+Foe _monster_ is Battle_mage
+
+--	Quest start-up:
+	start timer _1stparton_ 
+	reveal _contactdung_ 
+	reveal _mondung_ 
+	log 1020 step 0 
+	place foe _monster_ at _mondung_ 
+	place npc _qgfriend_ at _contactdung_ 
+
+_1stparton_ task:
+	end quest 
+
+variable _2ndparton_
+_pcgetsgold_ task:
+	when _npcclicked_ and _mondead_ 
+	give pc _artifact_ 
+	end quest 
+--removed unnecessary delay
+
+_mondead_ task:
+	killed 1 _monster_ 
+	say 1030 
+
+_npcclicked_ task:
+	clicked npc _qgfriend_ 
+
+--defining clearclick to prevent out-of-place victory condition
+_clearclick_ task:
+	when _npcclicked_ and not _mondead_
+	say 1003
+	clear _npcclicked_ _clearclick_

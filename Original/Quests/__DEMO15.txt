@@ -1,0 +1,22 @@
+---- Exemplo de busca para demonstrar recursos ligados ao diálogo
+---- um recurso é revelado quando mencionado na mensagem de
+---- outro recurso dado como resposta por npc (através de me fale sobre)
+
+Busca: __DEMO15
+
+QRC:
+
+Mensagem:  1011
+_someperson_ costumava possuir _someitem_.
+
+Mensagem:  1012
+Diz-se que _someitem_ tem poderes mágicos.
+
+QBN:
+
+Pessoa _someitem_ face 81 facção The_Thieves_Guild anyInfo 1011
+Item _someitem_ trinket anyInfo 1012
+
+-- Arranque de missões:
+	ligação de diálogo para pessoa _someperson_ item _someitem_
+	adicionar diálogo para pessoa _someperson_
