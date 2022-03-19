@@ -1,23 +1,23 @@
-; This is an example of a comment.
-; It can continue across many lines just
-; remember a semi-colon in front of each line.
+; Este é um exemplo de um comentário.
+; Pode continuar através de muitas linhas apenas
+; lembre-se de um ponto e vírgula na frente de cada linha.
 
-;For face, a straight number is a specific face (one of Louise's)
-;If there's a *, choose either a Male or Female Face
-;If there's a !, choose a Male Face
-;If there's a ?, choose a Female Face
-;If the *,!,? is followed by a A, any race will do
-;If the *,!,? is followed by a B, choose a Breton face
-;If the *,!,? is followed by a R, choose a Redguard face
+;Para o rosto, um número recto é um rosto específico (um dos de Louise)
+;Se houver um *, escolha um rosto masculino ou feminino
+;Se houver um !, escolha um rosto masculino
+;Se houver um ?, escolha um rosto feminino
+;Se o *,!,? for seguido por um A, qualquer raça fará
+;Se o *,!,? for seguido de um B, escolha um rosto bretão
+;Se o *,!,? for seguido por um R, escolha um rosto de Guarda Vermelha
 ;
-; The field sgroup should be set to one of the following values:
+; O grupo de campo deve ser definido para um dos seguintes valores:
 ; COMMONER	0
 ; MERCHANT	1
 ; SCHOLAR	2
 ; NOBILITY	3
 ; UNDERWORLD	4
 ;
-; The faction type is one of the following:
+; O tipo de facção é uma das seguintes:
 ; facDAEDRA		0
 ; facGOD		1
 ; facGROUP		2
