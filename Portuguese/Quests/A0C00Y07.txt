@@ -1,0 +1,179 @@
+-- Quest: C:\QUESTS\WORKING\A0C00Y07.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0
+-- QuestId: 7
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 11
+Quest: A0C00Y07
+DisplayName: O Exterminador
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce> Preciso de ajuda. _qgiver_ ao seu serviço,
+<ce> embora eu espere que o seu esteja no meu.
+<ce> _house_ está infestada de monstros.
+<ce> pode matá-los por mim? Eu posso pagar-te
+<ce>                          _gold_ gold pieces.
+
+RefuseQuest:  [1001]
+<ce> Preciso de ajuda! Alguém não me vai ajudar?
+
+AcceptQuest:  [1002]
+<ce> Obrigado, obrigado, obrigado! Se eles são
+<ce> amanhã por esta hora, estarei arruinado.
+
+QuestComplete:  [1004]
+<ce> Que alívio. Odeio essas coisas. Você
+<ce> têm sido muito úteis, %pcn.
+<ce>                Here is the _gold_ gold that I promised.
+<ce> aqui está o _gold_ gold que prometi.
+
+RumorsDuringQuest:  [1005]
+<ce> acho que é hilariante! _qgiver_'s
+<ce> _house_ é invadido por insectos gigantes!
+                                     <--->
+<ce> Sinto pena de _qgiver_. %g3
+<ce> _house_ foi praticamente tomada
+<ce> mais de 12 pés de comprimento com ratos venenosos
+<ce> stingers. Ouvi dizer que eles podem transformar um homem em
+<ce> pedra com um único olhar!
+
+RumorsPostfailure:  [1006]
+<ce> _qgiver_ teve de vender _house_.
+                                     <--->
+<ce> Ouço alguém no Guild Fighters Guild morrer
+<ce> tentando eliminar a infestação de
+<ce> _qgiver_'s _house_.
+
+RumorsPostsuccess:  [1007]
+<ce> 	Não é você a %ra que ajudou
+<ce> 	_qgiver_ livrar-se das bestas
+<ce> 	que tinha tomado conta de %g3 _house_?
+                                     <--->
+<ce> 	Ouço que _qgiver_ pagou
+<ce> 	alguém para matar todas as criaturas
+<ce> 	que tinha ultrapassado %g3 _house_.
+
+QuestorPostsuccess:  [1008]
+<ce> 	%pcf, devo-lhe uma dívida de gratidão por
+<ce> 	desobstruir a minha _house_ de monstros.
+                                     <--->
+<ce> 	Todos, ouçam bem. Quero que se encontrem
+<ce>	 meu amigo, %pcn, exterminador extraordinário.
+<ce> 	%g livrar a minha _house_ de três dúzias de monstros!
+
+QuestorPostfailure:  [1009]
+<ce> Você! Vocês arruinaram-me! Eu perdi _house_
+<ce> porque não foi capaz de tomar conta
+<ce> de um punhado de monstros nela contidos.
+                                     <--->
+<ce> Não é você a %ra que me falhou?
+<ce> Contratei-o para matar alguns monstros
+<ce> infestando a minha _house_, e você
+<ce> simplesmente não o conseguia fazer. Vai-te embora.
+
+QuestLogEntry:  [1010]
+%qdt:
+ Em ___qgiver_, eu conheci _qgiver_.
+ %g pediu-me para montar _house_ em
+ __ casa_ de monstros. %g necessidades
+ desapareceram no espaço de um dia.
+
+Message:  1011
+<ce>	Isso deve ser suficiente.
+
+Message:  1012
+<ce> Ouvem-se ruídos de arranhões vindos das paredes.
+<ce> As criaturas irão certamente reagir de forma deficiente
+<ce> à sua intrusão no seu território.
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 3 times.
+--               %g3 occurs 5 times.
+--              %pcf occurs 1 time.
+--              %pcn occurs 2 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 2 times.
+--        ___qgiver_ occurs 1 time.
+--          __house_ occurs 1 time.
+--            _gold_ occurs 3 times.
+--           _house_ occurs 18 times.
+--          _qgiver_ occurs 8 times.
+
+QBN:
+Item _gold_ gold
+
+Pessoa _qgiver_ group Questor
+
+Local _house_ local aleatório
+
+-- tempo definido para 24 horas estritas. se transporta bandeiras na DFU, o tempo torna-se variável
+Relógio _oneday_ 1.00:00
+
+Aranha _spiders_ adversária_ é Aranha
+O inimigo _rats_ é um Giant_rat
+O inimigo _scorpions_ é Giant_scorpion
+O adversário _bats_ é o Giant_bat
+
+-- Arranque de missões:
+	start timer _oneday_ 
+	log 1010 passo 0 
+	pc em _house_ set _S.01_ 
+	criar npc em _house_ 
+
+tarefa de um dia:
+	fim da busca 
+
+--instantâneo erro de recompensa corrigido.
+_questdone_ tarefa:
+	clicked npc _qgiver_
+
+S.01_ tarefa:
+	digamos 1012
+	tarefa de início _pickspawn_
+--prevenir múltiplas spawns utilizando a picareta estática
+
+_pickspawn_ task:
+	escolher uma de _S.04_ _S.05_ _S.06_ _S.07_ 
+
+
+--this quest had a rare case of no victory message
+_S.03_ task:
+	morto 6 _bats_ 
+	morto 3 _spiders_ 
+	morto 7 _rats_ 
+	morto 3 _scorpions_
+	morto 1011
+
+variable _S.04_
+_spawn1_ task:
+	quando _S.01_ e _S.04_ e não _S.03_
+	criar adversário _bats_ a cada 2 minutos indefinidamente com 100% de sucesso 
+
+variable _S.05_
+_spawn2_ task:
+	quando _S.01_ e _S.05_ e não _S.03_
+	criar adversário _rats_ a cada 2 minutos indefinidamente com 100% de sucesso 
+
+variable _S.06_
+_spawn3_ task:
+	quando _S.01_ e _S.06_ e não _S.03_
+	criar inimigos _scorpions_ a cada 3 minutos indefinidamente com 100% de sucesso 
+
+variable _S.07_
+_spawn4_ task:
+	quando _S.01_ e _S.07_ e não _S.03_
+	criar inimigos _spiders_a cada 3 minutos indefinidamente com 100% de sucesso 
+
+_clearclick_ task:
+	quando não _S.03_ e _questdone_ 
+	clear _questdone_ _clearclick_ _clearclick_
+
+tarefa _pcgetsgold_ :
+	quando _questdone_ e _S.03_
+	dar pc _dour_ 
+	busca final

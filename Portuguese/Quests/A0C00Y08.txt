@@ -1,0 +1,205 @@
+-- Quest: C:\QUESTS\WORKING\A0C00Y08.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0
+-- QuestId: 8
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 34
+Quest: A0C00Y08
+DisplayName: O Assassino
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce> O meu nome não tem importância. Tudo o que precisa de saber
+<ce> é que eu preciso de alguém que não tenha medo de
+<ce> derramar um pouco de sangue para, digamos, _gold_ gold. Diga
+<ce> me agora se não estás interessado. Está disposto a
+<ce> para aceitar este trabalho?
+                                     <--->
+<ce> Shhh! Fala baixo. Antes de eu dizer
+<ce> qualquer outra coisa, é o tipo de %ra que
+<ce> matará por ouro? Que tal _gold_ gold?
+                                     <--->
+<ce> Estou à procura de alguém que não desmaie em
+<ce> a visão de sangue. Sangue humano. Para _gold_ gold,
+<ce> mataria um homem?
+
+RefuseQuest:  [1001]
+<ce> Nunca me viste.
+                                     <--->
+<ce> Pira-te. Não quero que ninguém nos veja a falar juntos.
+                                     <--->
+<ce> Bem. Seja assim.
+
+AcceptQuest:  [1002]
+<ce>	Quero _darkb_ morto. O problema é que
+<ce>	a Irmandade das Trevas não aceitará o trabalho. Algo
+<ce>	sobre um favor que eles devem. Preciso de um independente. Faça
+<ce>	o trabalho e volte para mim dentro de uma semana e eu
+<ce>	pagar-lhe o _ouro_ ouro. Basta pedir o _questgiver_.
+<ce>	estarei aqui mesmo à sua espera.
+
+QuestComplete:  [1004]
+<ce> A vingança é minha! A propósito, é melhor que consiga
+<ce> fora da cidade. Ouvi dizer que a Irmandade apanhou vento
+<ce> disto. Aqui está o seu dinheiro, %pcf.
+
+RumorsDuringQuest:  [1005]
+<ce> ouço _questgiver_ odeia _darkb_.
+                                     <--->
+<ce> _darkb_ está ligado à Irmandade das Trevas.
+
+RumorsPostsuccess:  [1007]
+<ce> Alguém matou _darkb_, e em público, não menos!
+                                     <--->
+<ce> Soube do homicídio? _darkb_
+<ce> foi assassinado por um assassino.
+                                     <--->
+<ce> Nunca gostei de _darkb_. Estou contente por alguém
+<ce> finalmente fora %g2. Ouvi dizer que foi o
+<ce> Dark Brotherhood.
+
+QuestorPostsuccess:  [1008]
+<ce> Mantenha a sua voz baixa. Você matou _darkb_
+<ce> para mim, e eu reconheço a dívida, mas não
+<ce> quero que as pessoas pensem que eu tive alguma coisa a ver com isso.
+
+QuestorPostfailure:  [1009]
+<ce> Contratei-o para fazer um trabalho, mas não foi possível.
+<ce> Tudo o que tinhas de fazer era matar _darkb_.
+<ce> Agora é tarde demais, e a Irmandade das Trevas
+<ce> está atrás de mim. Deixem-me em paz.
+
+QuestLogEntry:  [1010]
+%qdt:
+ Aceitei um contrato para matar _darkb_.
+ Tenho uma semana para voltar a _questgiver_
+ de ___questgiver_ com a escritura feita.
+
+Message:  1015
+<ce> _darkb_ não está morto! Que tipo de idiota
+<ce> tomas-me por, %pcf?
+
+Message:  1021
+<ce>	Ajuda! Assassino! Socorro!
+
+Message:  1022
+<ce> Cur! Que tipo de assassino é você? Às armas! Às armas!
+
+Message:  1023
+<ce>	Fui atingido! %oth.
+
+Message:  1024
+<ce> Covarde! Ataca-me sem causa ou provocação.
+
+Message:  1030
+<ce> _questgiver_? Eu não sei muito sobre %g2.
+<ce> Mantém-se a %g2.
+
+Message:  1031
+<ce> Ouvi dizer que _questgiver_ tem alguns amigos bastante sombrios.
+<ce> Mas não o ouviu da minha boca.
+
+Message:  1032
+<ce> Um cidadão íntegro. Pergunte a qualquer pessoa.
+
+Message:  1033
+<ce> _darkb_ está normalmente em _place_, mas
+<ce> Eu não me misturaria em %g3 assuntos.
+<ce> Apenas uma palavra amigável de conselho.
+
+
+-- Symbols used in the QRC file:
+--
+--               %g2 occurs 4 times.
+--           %g2self occurs 2 times.
+--               %g3 occurs 1 time.
+--              %oth occurs 2 times.
+--              %pcf occurs 4 times.
+--              %qdt occurs 1 time.
+--               %ra occurs 1 time.
+--    ___questgiver_ occurs 2 times.
+--           _darkb_ occurs 15 times.
+--            _gold_ occurs 9 times.
+--           _place_ occurs 1 time.
+--      _questgiver_ occurs 8 times.
+
+QBN:
+Item _gold_ gold
+
+<ce> _darkb_ está normalmente em _place_, mas
+<ce> Eu não me misturaria em %g3 assuntos.
+<ce> Apenas uma palavra amigável de conselho.
+Pessoa _questador_ grupo Questor anyInfo 1030 rumores 1031
+Pessoa _darkb_face 1 facção The_Dark_Brotherhood remoto qualquerInfo 1032 rumores 1033
+
+Lugar _place_ local aleatório
+
+Relógio _S.00_ 7.00:00 0 bandeira 1 intervalo 0 1
+
+O inimigo _bard_ é o Bardo
+O inimigo _rogue_ é Rogue
+O inimigo _archer_ é Arqueiro
+Foe _ _spellsword_ é soletração
+
+-- Arranque de missões:
+	temporizador de início _S.00_ 
+	log 1010 passo 0 
+	pc em _place_ set _S.11_ 
+	place npc _darkb_ at _place_ 
+
+
+
+_S.00_ task:
+	end quest 
+
+_S.01_ task:
+	restrain foe _archer_ 
+	place foe _archer_ at _place_ 
+
+_S.02_ task:
+	restrain foe _bard_ 
+	place foe _bard_ at _place_ 
+
+_S.03_ task:
+	restrain foe _rogue_ 
+	place foe _rogue_ at _place_ 
+
+_S.04_ task:
+	restrain foe _spellsword_ 
+	place foe _spellsword_ at _place_ 
+
+variable _S.05_
+_S.06_ task:
+	injured _rogue_ saying 1023 
+	injured _archer_ saying 1021 
+	injured _bard_ saying 1022 
+	injured _spellsword_ saying 1024 
+
+_S.07_ task:
+	killed 1 _archer_ 
+	killed 1 _bard_ 
+	killed 1 _rogue_ 
+	killed 1 _spellsword_ 
+	change repute with _darkb_ by -20 
+	legal repute -75 
+
+_S.08_ task:
+	clicked npc _questgiver_ 
+
+_clearclick_ task:
+	when _S.08_ and not _S.07_ 
+	say 1015 
+	clear _S.08_ _clearclick_
+--added an additional clear clearclick here. Otherwise this clearing function would stop working after the first click.
+
+_S.10_ task:
+	when _S.08_ and _S.07_ 
+	give pc _gold_ 
+	end quest 
+
+_S.11_ task:
+	pick one of _S.01_ _S.02_ _S.03_ _S.04_ 
+	hide npc _darkb_ 
