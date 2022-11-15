@@ -1,0 +1,259 @@
+-- Quest: C:\QUESTS\WORKING\A0C0XY04.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 0X
+-- QuestId: 4
+-- Edited for Daggerfall Unity by Jay_H
+Messages: 36
+Quest: A0C0XY04
+DisplayName: O Impostor
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>	 Meu nome é _agent_. I
+<ce> 	representar uma pessoa que necessita
+<ce> 	para... adquirir algo. A quem
+<ce> 	entrega será recompensado
+<ce>	com _artifact_. I
+<ce> 	não sei o que isso é, mas eu
+<ce> 	sou informado de que é um item de poder.
+<ce> 	você está disposto a isso?
+
+RefuseQuest:  [1001]
+<ce> 	Esqueça que você já me viu. Eu tenho
+<ce> 	amigos poderosos. Se você causar
+<ce> 	me qualquer problema, eles irão caçar
+<ce> 	você está no chão como um ladrão desonesto.
+
+AcceptQuest:  [1002]
+<ce> Você deve obter o daedric
+<ce> _ingredient_ de ___dungeon_.
+<ce> não sei onde isso fica, mas
+<ce> Tenho certeza que você pode encontrá-lo.
+<ce> Quando você tiver o daedric
+<ce> _ingredient_, leve-o para
+<ce> _meetingplace_ aqui na cidade.
+<ce> Lá você encontrará _qgiver_,
+<ce> e %g lhe dará o _artifact_.
+
+RumorsDuringQuest:  [1005]
+<ce>                     I hear the king is making an
+<ce>                   important announcement next week.
+
+RumorsPostfailure:  [1006]
+<ce> Algum pobre tolo entrou em ___dungeon_.
+<ce> ouvi dizer que o lugar está cheio de demônios.
+
+RumorsPostsuccess:  [1007]
+<ce> Fique longe de _qgiver_. I
+<ce> ouvir %g é um mentiroso e um trapaceiro.
+
+QuestorPostsuccess:  [1008]
+<ce> Desculpe pelo incidente com _qgiver_.
+<ce> Suponho que eu deveria ajudá-los apenas a
+<ce> compensá-lo.
+
+QuestorPostfailure:  [1009]
+<ce> Que o negócio com _qgiver_ não era
+<ce> minha culpa. Eu não estou prestes a me misturar
+<ce> agora, deixe-me em paz.
+
+QuestLogEntry:  [1010]
+Em %qdt,
+ Encontrei-me com ___agent_ de ___agent_.
+ %g me disse que um cliente misterioso de
+ %g3 estava procurando por daedric _ingredient_.
+ Se eu conseguir encontrá-lo, eu vou conseguir o _artifact_
+ O daedric _ingredient_ está em algum lugar
+ em ___moradia_.  Quando eu o encontro, eu sou
+ para encontrar um _qgiver_ em
+ _meetingplace_ aqui em __meetingplace_.
+
+Message:  1011
+Em %qdt,
+ o guardião do daedric _ingredient_
+ me disse que _agent_ é misterioso
+ cliente não tem nem mesmo o _artifact_.
+ Se eu entregar o _ingredient_ daedric,
+ A morte será minha única recompensa. O guardião
+ me deu um símbolo mágico que me renderá
+ _qgiver_ indefeso.
+
+Message:  1012
+<ce> Eu lutarei até a morte para proteger
+<ce> o daedric _ingrediente_. Você deve
+<ce> saiba que _qgiver_ não é o que %g
+<ce> parece. O _artifato_ é um
+<ce> item de grande poder que %g nunca
+<ce> de propriedade. %g significa matar você uma vez %g
+<ce> tem a posse da daedric
+<ce> _ingrediente_. Pare com este inútil
+<ce> atacar e eu lhe darei um mágico
+<ce> ficha que pode render _qgiver_
+<ce> indefeso. Se você matar %g2, eu posso ver
+<ce> a ele que o Grémio dos Mages parece
+<ce> favoravelmente a você por um bom número
+<ce> tempo. Você aceita minha oferta?
+
+Message:  1013
+<ce> Idiota! Você realmente pensou
+<ce> que eu lhe daria o
+<ce> _artifato_ para isto
+<ce> daedric _ingredient_? O único
+<ce> a recompensa que tenho para você é
+<ce> morte! Ver-me como eu realmente
+<ce> am e tremem de medo. I
+<ce> am =monster_. Matem-no!
+
+Message:  1014
+<ce> Que... Eu fui traído!
+<ce> Você quebrou a ilusão
+<ce> e lançam um feitiço de silêncio
+<ce> sobre mim. Aquele maldito _guardian_
+<ce> =guardian_ coloca você nessa posição,
+<ce> não fez %g? Às armas! Ajude-me!
+<ce> às armas!
+
+Message:  1015
+<ce> Em sua mente, você ouve o
+<ce> sussurro suave de um alienígena
+<ce> voz, "Muito bem feito",
+<ce> %pcn. Matança
+<ce> _qgiver_, ou =monster_
+<ce> como %g é conhecida a %g3 possui
+<ce> pessoas, lhe rendeu um
+<ce> recompensa. Membros do
+<ce> Mage's Guild agora confia em você
+<ce> muito mais do que antes".
+
+Message:  1020
+<ce> Você tem um verdadeiro desonesto
+<ce> mente. Eu admiro isso. Mas
+<ce> você deve saber que eu sou
+<ce> não se deve brincar com isso.
+<ce> retiro minha ficha e
+<ce> amaldiçoar você a ser desconfiado
+<ce> pelos meus aliados mais próximos.
+
+Message:  1025
+O Chrysamere é um antigo artefato de grande poder.
+<--->
+Trata-se de um lendário artefato mágico.
+
+Message:  1030
+Pegue esta ficha então.
+
+Message:  1035
+Prepare-se para morrer!
+
+
+-- Symbols used in the QRC file:
+--
+--                %g occurs 13 times.
+--               %g2 occurs 1 time.
+--               %g3 occurs 2 times.
+--              %pcn occurs 1 time.
+--              %qdt occurs 2 times.
+--        =guardian_ occurs 1 time.
+--         =monster_ occurs 3 times.
+--         ___agent_ occurs 1 time.
+--       ___dungeon_ occurs 3 times.
+--   __meetingplace_ occurs 3 times.
+--           _agent_ occurs 3 times.
+--        _artifact_ occurs 7 times.
+--        _guardian_ occurs 1 time.
+--      _ingredient_ occurs 9 times.
+--    _meetingplace_ occurs 2 times.
+--          _qgiver_ occurs 9 times.
+
+QBN:
+Item _artifact_ artifact Chrysamere anyInfo 1025
+Item _ingredient_ lodestone
+Item _token_ pearl
+
+Person _qgiver_ face 1 group Chemist local
+Person _agent_ group Questor
+Person _dummymage_ face 1 faction The_Mages_Guild remote
+Person _dummyorc_ face 1 named Gortwog
+Person _dummydarkb_ face 49 faction The_Dark_Brotherhood remote
+
+Place _dungeon_ remote dungeon7
+Place _meetingplace_ local apothecary
+
+Clock _extratime_ 00:30 0 flag 1 range 0 1
+Clock _totaltime_ 90.00:00 0 flag 17 range 0 2
+
+Foe _guardian_ is Daedra_seducer
+Foe _monster_ is Orc_shaman
+Foe _orc_ is Orc_warlord
+Foe _daedras_ is Daedroth
+
+--	Quest start-up:
+	start timer _totaltime_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	give item _ingredient_ to _guardian_ 
+	place foe _guardian_ at _dungeon_ 
+	place npc _qgiver_ at _meetingplace_ 
+
+_giveingredient_ task:
+	toting _ingredient_ and _qgiver_ clicked saying 1013 
+	give item _ingredient_ to _monster_ 
+	cast Shield spell on _monster_ 
+	cast Spell_Reflection spell on _monster_ 
+
+_hitguardian_ task:
+	injured _guardian_ 
+	prompt 1012 yes _yes_ no _no_ 
+--a task yes without underscores is a prima facie danger, though it hasn't caused any problems yet. tasks, items, and so forth should have underscores for style and execution
+
+_yes_ task:
+	log 1011 step 1 
+	get item _token_ 
+	say 1030 
+	restrain foe _guardian_ 
+
+_no_ task:
+	say 1035 
+
+--unused variable _clickonqgiver_
+variable _clickonqgiver_
+_givetoken_ task:
+	toting _token_ and _qgiver_ clicked saying 1014 
+	cast Silence spell on _monster_ 
+
+_shamandead_ task:
+	killed 1 _monster_ 
+	start timer _extratime_ 
+
+_givereward_ task:
+	when _givetoken_ and _shamandead_ 
+	change repute with _dummymage_ by +25
+	change repute with _dummyorc_ by -10 
+	say 1015
+	--"saying ###" as an argument here is unsupported, I gave it its own line
+
+_extratime_ task:
+	make _ingredient_ permanent 
+	end quest 
+
+_totaltime_ task:
+	make _ingredient_ permanent 
+	end quest 
+
+_revealmonsters_ task:
+	when _giveingredient_ or _givetoken_ 
+	create foe _orc_ every 1 minutes 1 times with 100% success 
+	hide npc _qgiver_ 
+	place foe _monster_ at _meetingplace_ 
+
+_S.11_ task:
+	killed 1 _guardian_ 
+
+_betrayguardian_ task:
+	when _yes_ and _S.11_ 
+	create foe _daedras_ every 1 minutes 3 times with 100% success 
+	take _token_ from pc saying 1020 
+	change repute with _dummydarkb_ by -75 
